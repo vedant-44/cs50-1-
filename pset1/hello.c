@@ -3,5 +3,5 @@
 int main(void)
 {
    int answer = get_int ("how old are you?");
-   printf("i am also ,%i answer");
+   printf("i am also, %i",answer);
 }
