@@ -2,7 +2,8 @@
 #include<stdio.h>
 int main(void)
 {
-  req= get_
+ char req= get_char("which operation do you want?");
+ 
  int x=  get_int("x:");
  int y=  get_int("y:");
   printf("ans:%i\n",x*y);
