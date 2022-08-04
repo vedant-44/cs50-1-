@@ -1,5 +1,7 @@
-#include <stdio.h>
+# include<stdio.h>
+#include<cs50.h>
 int main(void)
 {
-    printf("hello world\n");
+   int answer = get int ("how old are you?");
+   printf(i am also ,%i answer);
 }
