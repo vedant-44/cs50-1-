@@ -2,5 +2,8 @@
 #include<stdio.h>
 int main(void)
 {
-    for()
+    for(int i =0 ;i<3;i=i+1)
+    {
+        printf("meow");
+    }
 }
