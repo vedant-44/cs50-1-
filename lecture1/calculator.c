@@ -2,7 +2,7 @@
 #include<stdio.h>
 int main(void)
 {
-  x=  get_int("x:");
-  y=  get_int("y:");
-  
+ int x=  get_int("x:");
+ int y=  get_int("y:");
+  printf("x*y");
 }
