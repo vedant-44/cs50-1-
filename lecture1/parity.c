@@ -2,7 +2,7 @@
 #include<stdio.h>
 int main(void)
 {
-  int n=  get_int("which number do you want to check?");
+  int n=  get_int("n:");
   if(n % 2 == 0)
   {
     printf("even\n");
