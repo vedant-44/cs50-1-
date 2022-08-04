@@ -2,14 +2,13 @@
 #include<stdio.h>
 int main(void)
 {
-  int n=  get_int("n:");
+  int n=  get_int("which number do you want to check?");
   if(n % 2 == 0)
   {
     printf("even\n");
-    else
-    {
-    printf("odd\n");
-    }
-
+  }
+  else
+  {
+    prinf("odd");
   }
 }
