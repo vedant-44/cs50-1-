@@ -9,6 +9,6 @@ int main(void)
   }
   else
   {
-    prinf("odd");
+    printf("odd\n");
   }
 }
