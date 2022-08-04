@@ -3,10 +3,13 @@
 int main(void)
 {
   int n=  get_int("which number do you want to check?");
-  if(%i % 2==0,n)
+  if(n % 2 == 0)
   {
-    printf("even");
+    printf("even\n");
     else
-    printf("odd");
+    {
+    printf("odd\n");
+    }
+
   }
 }
