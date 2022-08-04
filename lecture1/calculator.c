@@ -2,7 +2,7 @@
 #include<stdio.h>
 int main(void)
 {
-    
+  req= get_
  int x=  get_int("x:");
  int y=  get_int("y:");
   printf("ans:%i\n",x*y);
