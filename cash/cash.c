@@ -75,19 +75,28 @@ int calculate_dimes(int cents)
     {
        y=cents%10;
        dimes=cents-y/10;
-       
+       return dimes;
     }
 
 }
 
 int calculate_nickels(int cents)
 {
-    // TODO
-    return 0;
+    if(cents<5)
+    {
+        return 0;
+    }
+    else
+    {
+        z=cents%5;
+        dimes=cents-z/5;
+        return dimes;
+    }
+
 }
 
 int calculate_pennies(int cents)
 {
-    // TODO
-    return 0;
+    
+
 }
