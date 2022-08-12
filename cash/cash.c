@@ -59,7 +59,7 @@ int calculate_quarters(int cents)
     else
     {
        x=cents%25;
-       q=cents-x/25;
+       q=(cents-x)/25;
        return q;
     }
 
@@ -76,7 +76,7 @@ int calculate_dimes(int cents)
     else
     {
        y=cents%10;
-       d=cents-y/10;
+       d=(cents-y)/10;
        return d;
     }
 
@@ -93,7 +93,7 @@ int calculate_nickels(int cents)
     else
     {
         z=cents%5;
-        n=cents-z/5;
+        n=(cents-z)/5;
         return n;
     }
 
