@@ -48,7 +48,11 @@ int calculate_quarters(int cents)
 {
     if(cents<25)
     {
-
+       return 0;
+    }
+    else if(cents>25)
+    {
+        
     }
 
 }
