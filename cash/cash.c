@@ -39,20 +39,20 @@ int main(void)
 
 int get_cents(void)
 {
-    int cents;
+    int c;
    do
    {
-    cents = get_int("cents:");
+    c = get_int("cents:");
    }
-while(cents<0);
-return cents;
+while(c<0);
+return c;
 }
 
 int calculate_quarters(int cents)
 {
      int x;
-     int quarters;
-    if(cents<25)
+     int q;
+    if(c<25)
     {
        return 0;
     }
