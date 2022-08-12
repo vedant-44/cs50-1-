@@ -44,14 +44,14 @@ int get_cents(void)
    {
     cents = get_int("cents:");
    }
-while(cents);
+while(cents<0);
 return cents;
 }
 
 int calculate_quarters(int cents)
 {
      int x;
-     int quarters;
+     int q;
     if(cents<25)
     {
        return 0;
@@ -59,8 +59,8 @@ int calculate_quarters(int cents)
     else
     {
        x=cents%25;
-       quarters=cents-x/25;
-       return quarters;
+       q=cents-x/25;
+       return q;
     }
 
 }
@@ -68,7 +68,7 @@ int calculate_quarters(int cents)
 int calculate_dimes(int cents)
 {
     int y;
-    int dimes;
+    int d;
     if(cents<10)
     {
         return 0;
@@ -76,8 +76,8 @@ int calculate_dimes(int cents)
     else
     {
        y=cents%10;
-       dimes=cents-y/10;
-       return dimes;
+       d=cents-y/10;
+       return d;
     }
 
 }
@@ -85,7 +85,7 @@ int calculate_dimes(int cents)
 int calculate_nickels(int cents)
 {
     int z;
-    int nickels;
+    int n;
     if(cents<5)
     {
         return 0;
@@ -93,16 +93,16 @@ int calculate_nickels(int cents)
     else
     {
         z=cents%5;
-        nickels=cents-z/5;
-        return nickels;
+        n=cents-z/5;
+        return n;
     }
 
 }
 
 int calculate_pennies(int cents)
 {
-    int pennies;
-    pennies = cents;
-    return pennies;
+    int p;
+    p = cents;
+    return p;
 
 }
