@@ -46,7 +46,10 @@ while(cents<0);
 
 int calculate_quarters(int cents)
 {
-    
+    if(cents<25)
+    {
+
+    }
 
 }
 
