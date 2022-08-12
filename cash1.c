@@ -3,10 +3,10 @@
 int main (void)
 {
     int cents= get_int("cents:");
-    int x;
-    x=cents%25;
-    int y;
-    y=56-6%25;
+
+    int x=cents%25;
+    int z=cents-x;
+    int y=z/25;
 
     printf("%i\n",y);
 }
