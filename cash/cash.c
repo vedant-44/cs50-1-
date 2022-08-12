@@ -10,6 +10,10 @@ int calculate_pennies(int cents);
 int main(void)
 {
     int x;
+    int y;
+    int z;
+    int k;
+
     // Ask how many cents the customer is owed
     int cents = get_cents();
 
@@ -52,18 +56,28 @@ int calculate_quarters(int cents)
     {
        return 0;
     }
-    else if(cents>25)
+    else
     {
        x=cents%25;
-       
+       quarters=cents-x/25;
+       return quarters;
     }
 
 }
 
 int calculate_dimes(int cents)
 {
-    // TODO
-    return 0;
+    if(cents<10)
+    {
+        return 0;
+    }
+    else
+    {
+       y=cents%10;
+       dimes=cents-y/10;
+       
+    }
+
 }
 
 int calculate_nickels(int cents)
