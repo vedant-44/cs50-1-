@@ -50,7 +50,8 @@ return cents;
 
 int calculate_quarters(int cents)
 {
-
+     int x;
+     int quarters;
     if(cents<25)
     {
        return 0;
@@ -66,6 +67,8 @@ int calculate_quarters(int cents)
 
 int calculate_dimes(int cents)
 {
+    int y;
+    int dimes;
     if(cents<10)
     {
         return 0;
@@ -81,6 +84,8 @@ int calculate_dimes(int cents)
 
 int calculate_nickels(int cents)
 {
+    int z;
+    int nickels;
     if(cents<5)
     {
         return 0;
@@ -88,14 +93,15 @@ int calculate_nickels(int cents)
     else
     {
         z=cents%5;
-        dimes=cents-z/5;
-        return dimes;
+        nickels=cents-z/5;
+        return nickels;
     }
 
 }
 
 int calculate_pennies(int cents)
 {
+    int pennies;
     pennies = cents;
     return pennies;
 
