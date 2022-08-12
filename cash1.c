@@ -7,5 +7,6 @@ int main (void)
     x=cents%25;
     int y;
     y=cents-x/25;
+
     printf("%i\n",y);
 }
