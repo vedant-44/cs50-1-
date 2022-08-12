@@ -51,8 +51,8 @@ return cents;
 int calculate_quarters(int cents)
 {
      int x;
-     int q;
-    if(c<25)
+     int quarters;
+    if(cents<25)
     {
        return 0;
     }
