@@ -97,6 +97,7 @@ int calculate_nickels(int cents)
 
 int calculate_pennies(int cents)
 {
-    
+    pennies = cents;
+    return pennies;
 
 }
