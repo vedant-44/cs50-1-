@@ -46,8 +46,8 @@ while(cents<0);
 
 int calculate_quarters(int cents)
 {
-    // TODO
-    return 0;
+    
+
 }
 
 int calculate_dimes(int cents)
