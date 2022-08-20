@@ -3,12 +3,8 @@
 int main (void)
 {
     string name = get_string("name:");
-    int i=0;
-    while(name[i]!='\0')
-    {
-     i++;
+    length(name);
 
-    }
     printf("%i\n",i);
 
 
@@ -17,3 +13,12 @@ int main (void)
 
 
 
+int length(string name)
+{
+    int i=0;
+    while(name[i]!='\0')
+    {
+     i++;
+     }
+     return i;
+}
