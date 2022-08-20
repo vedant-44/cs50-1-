@@ -1,11 +1,13 @@
 #include<stdio.h>
 #include<cs50.h>
+int length(string name);
 int main (void)
 {
     string name = get_string("name:");
-    length(name);
+    int l = length(name);
+    printf("%i\n",l);
 
-    printf("%i\n",i);
+    
 
 
 }
@@ -13,7 +15,7 @@ int main (void)
 
 
 
-int length(string name)
+int length(string name);
 {
     int i=0;
     while(name[i]!='\0')
