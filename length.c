@@ -7,7 +7,7 @@ int main (void)
     int l = length(name);
     printf("%i\n",l);
 
-    
+
 
 
 }
@@ -16,11 +16,11 @@ int main (void)
 
 
 int length(string name);
-{
+ (
     int i=0;
     while(name[i]!='\0')
     {
      i++;
      }
      return i;
-}
+ )
