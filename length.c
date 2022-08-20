@@ -3,5 +3,6 @@
 int main (void)
 {
     string name = get_string("name:");
-    for(int i=0;i)
+    for(int i=0;i++;name[i]!='\0')
+    printf("%i\n",i);
 }
