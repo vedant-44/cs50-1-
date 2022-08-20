@@ -15,7 +15,7 @@ int main (void)
 
 
 
-int length(string name);
+int length(string name)
  {
     int i=0;
     while(name[i]!='\0')
