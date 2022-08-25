@@ -31,6 +31,7 @@ int compute_score(string word)
    {
     if(islower(word))
     {
+        int x = word[i] - 97;
         
     }
 
