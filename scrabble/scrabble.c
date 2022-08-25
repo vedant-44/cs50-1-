@@ -26,10 +26,11 @@ int main(void)
 int compute_score(string word)
 {
    int l = strlen(word);
-   for(int i=0;i++;i<l)
+   int i=0;
+   while(i<l)
    {
     int x = int word[i] - 96;
-    
+
    }
 
 }
