@@ -28,11 +28,8 @@ int compute_score(string word)
    int l = strlen(word);
    for(int i=0;i++;i<l)
    {
+    int x = int word[i] - 96;
     
-
-
-
-
    }
 
 }
