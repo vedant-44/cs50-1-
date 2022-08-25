@@ -29,6 +29,10 @@ int compute_score(string word)
    for(i=0;i++;i<l)
    {
     
+
+
+
+
    }
 
 }
