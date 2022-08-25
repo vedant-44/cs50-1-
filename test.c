@@ -11,3 +11,6 @@ int main()
 
 
 int askii (string word1)
+{
+    
+}
