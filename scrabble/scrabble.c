@@ -29,7 +29,8 @@ int compute_score(string word)
    int i=0;
    while(i<l)
    {
-    int x = int word[i] - 96;
+    int x = int word[i] - 97;
+    
 
    }
 
