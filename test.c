@@ -3,14 +3,6 @@
 int main()
 {
     string word1 = get_string ("word:");
-
-}
-
-
-
-
-
-int askii (string word1)
-{
-   
+     int x = int (word1[0]);
+     printf("%i\n",x);
 }
