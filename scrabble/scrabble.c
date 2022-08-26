@@ -29,11 +29,11 @@ int compute_score(string word)
    int i=0;
    while(i<l)
    {
-    if(islower(word))
-    {
+
+
         int x = word[i] - 97;
-        
-    }
+
+    
 
 
 
