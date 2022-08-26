@@ -18,7 +18,7 @@ int main()
         i++;
 
         int y = POINTS[x];
-         printf("%i\n",y);
+         int scores[y];
 
 
 
