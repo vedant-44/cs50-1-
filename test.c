@@ -20,11 +20,11 @@ string word = get_string ("word:");
         i++;
 
          y = POINTS[x];
-
+         break;
 
    }
 
-printf("%i\n",score[1]);
+printf("%i\n",y);
 
 
 }
