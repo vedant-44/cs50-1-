@@ -13,11 +13,17 @@ int main()
 
         int x = word[i] - 97;
 
-
+printf("%i\n",x);
 
 
       i++;
    }
 
-printf("%i\n",x);
+
 }
+
+
+
+
+
+
