@@ -25,7 +25,8 @@ for (int j=0;j++;j<l)
          break;
    }
 
-   scores[l]={y};
+   
+
 
 }
 
