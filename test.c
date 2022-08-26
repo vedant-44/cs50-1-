@@ -7,28 +7,7 @@ int main()
 {
 string word = get_string ("word:");
   int l = strlen(word);
-   int i=0;
-   int x;
-   int y=0;
-   int scores[l];
-for (int j=0;j++;j<l)
-{
-   while(i<l)
-   {
-
-
-         x = word[i] - 97;
-
-        i++;
-
-         y = POINTS[x];
-         break;
-   }
-
-   
-
-
-}
+  
 
 
 
