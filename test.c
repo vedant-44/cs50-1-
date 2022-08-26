@@ -9,8 +9,9 @@ string word = get_string ("word:");
   int l = strlen(word);
    int i=0;
    int x;
-   int y;
-
+   int y=0;
+for (int j=0;j++;j<l)
+{
    while(i<l)
    {
 
@@ -21,9 +22,11 @@ string word = get_string ("word:");
 
          y = POINTS[x];
          break;
-
    }
 
+
+  
+}
 
 
 
