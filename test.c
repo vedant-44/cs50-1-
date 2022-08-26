@@ -10,6 +10,7 @@ string word = get_string ("word:");
    int i=0;
    int x;
    int y=0;
+   int scores[l];
 for (int j=0;j++;j<l)
 {
    while(i<l)
@@ -24,8 +25,8 @@ for (int j=0;j++;j<l)
          break;
    }
 
+   scores[l]={y};
 
-  
 }
 
 
