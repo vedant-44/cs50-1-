@@ -10,6 +10,7 @@ string word = get_string ("word:");
    int i=0;
    int x;
    int y;
+
    while(i<l)
    {
 
@@ -23,7 +24,7 @@ string word = get_string ("word:");
 
    }
 
-
+printf("%i\n",score[1]);
 
 
 }
