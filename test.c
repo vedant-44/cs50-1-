@@ -9,6 +9,7 @@ string word = get_string ("word:");
   int l = strlen(word);
    int i=0;
    int x;
+   int y;
    while(i<l)
    {
 
@@ -17,11 +18,11 @@ string word = get_string ("word:");
 
         i++;
 
-        int y = POINTS[x];
+         y = POINTS[x];
 
 
    }
-printf("%i\n",x);
+printf("%i\n",y);
 
 
 
