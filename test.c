@@ -11,7 +11,7 @@ string word = get_string ("word:");
   int y;
   for(int i=0;i++;i<n)
   {
-   x
+   x = 
 
   }
 
