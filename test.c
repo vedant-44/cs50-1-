@@ -8,12 +8,12 @@ int main()
 string word = get_string ("word:");
   int l = strlen(word);
    int i=0;
-
+   int x;
    while(i<l)
    {
 
 
-        int x = word[i] - 97;
+         x = word[i] - 97;
 
         i++;
 
@@ -21,7 +21,7 @@ string word = get_string ("word:");
 
 
    }
-printf("%i\n",i);
+printf("%i\n",x);
 
 
 
