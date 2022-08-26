@@ -22,7 +22,7 @@ string word = get_string ("word:");
 
 
    }
-printf("%i\n",y);
+
 
 
 
