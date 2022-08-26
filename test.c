@@ -8,6 +8,7 @@ int main()
 string word = get_string ("word:");
   int l = strlen(word);
    int i=0;
+
    while(i<l)
    {
 
@@ -17,7 +18,7 @@ string word = get_string ("word:");
         i++;
 
         int y = POINTS[x];
-
+         
 
    }
 
