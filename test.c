@@ -9,12 +9,14 @@ string word = get_string ("word:");
   int l = strlen(word);
   int x;
   int y;
-  for(int i=0;i++;i<n)
+  for(int i=0;i++;i<l)
   {
-   x = 
+   x = word[i]-97;
+   y=POINTS[x];
+   y = y+y;
 
   }
-
+printf("%i\n",y);
 
 
 }
