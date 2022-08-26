@@ -18,7 +18,7 @@ int main()
         i++;
 
         int y = POINTS[x];
-         int scores[y];
+         
 
 
 
