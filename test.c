@@ -7,17 +7,23 @@ int main()
 {
 string word = get_string ("word:");
   int l = strlen(word);
-  int x;
-  int y;
-  for(int i=0;i++;i<l)
-  {
-   x = word[i]-97;
-   y=POINTS[x];
-   y = y+y;
+   int i=0;
+   int x;
+   int y=0;
+   while(i<l)
+   {
 
-  }
+
+         x = word[i] - 97;
+        i++;
+        y=POINTS[x];
+        y=y+y;
+
+
+
+   }
+
 printf("%i\n",y);
-
 
 }
 
