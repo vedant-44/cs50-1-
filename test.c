@@ -18,4 +18,6 @@ int main()
      printf("%i\n",x);
       i++;
    }
+
+   
 }
