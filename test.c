@@ -18,10 +18,10 @@ string word = get_string ("word:");
         i++;
 
         int y = POINTS[x];
-         
+
 
    }
-
+printf("%i\n",i);
 
 
 
