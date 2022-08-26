@@ -17,7 +17,7 @@ string word = get_string ("word:");
          x = word[i] - 97;
         i++;
         y=POINTS[x];
-        y=y+y;
+        y+=y;
 
 
 
