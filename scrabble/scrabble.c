@@ -32,8 +32,8 @@ int compute_score(string word)
 
 
         int x = word[i] - 97;
+        i++;
 
-    
 
 
 
