@@ -18,13 +18,7 @@ int main()
         i++;
 
         int y = POINTS[x];
-         
-
-
-
-
-
-
+         return y;
 
    }
 
