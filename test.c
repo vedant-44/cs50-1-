@@ -17,11 +17,8 @@ int main()
         i++;
 
         int y = POINTS[x]
+        
 
-        for(int j=0 ; j++ ; j<l)
-        {
-         
-        }
 
 
 
