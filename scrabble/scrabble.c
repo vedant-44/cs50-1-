@@ -25,18 +25,17 @@ int main(void)
 
 int compute_score(string word)
 {
-   int l = strlen(word);
-   int i=0;
-   while(i<l)
-   {
+    int l = strlen(word);
+    int score = 0;
+
+    for(int i=0;i++;i<l)
+
+    {
+        score = POINTS[word[i]-97];
+        score = score + score;
+    }
+         return score;
 
 
-        int x = word[i] - 97;
-        i++;
-
-
-
-
-   }
 
 }
