@@ -42,8 +42,8 @@ int compute_score(string word)
     for(int i=0;i<l;i++)
 
     {
-        score = POINTS[word[i]-97];
-        score = score + score;
+        score += POINTS[word[i]-97];
+
     }
          return score;
 
