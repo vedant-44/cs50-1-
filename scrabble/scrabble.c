@@ -38,8 +38,8 @@ int compute_score(string word)
 {
 
     int score = 0;
-
-    for(int i=0;i++,int len = strlen(word);i<len)
+    int l = strlen(word);
+    for(int i=0;i<l;i++)
 
     {
         score = POINTS[word[i]-97];
