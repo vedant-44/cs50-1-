@@ -36,10 +36,10 @@ int main(void)
 
 int compute_score(string word)
 {
-    int l = strlen(word);
+
     int score = 0;
 
-    for(int i=0;i++;i<l)
+    for(int i=0;i++,int len = strlen(word);i<len)
 
     {
         score = POINTS[word[i]-97];
