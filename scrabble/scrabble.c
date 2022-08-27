@@ -42,7 +42,9 @@ int compute_score(string word)
     for(int i=0;i<l;i++)
 
     {
-        score += POINTS[word[i]-'a'];
+        
+        int x =  POINTS[word[i]-'a'];
+        score = score + x;
 
     }
          return score;
