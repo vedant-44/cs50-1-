@@ -9,7 +9,8 @@ int main (void)
     int letters = 0;
     for(int i=0;i<l;i++)
     {
-        if('a'<word[i]<'z')
+        if('a'<word[i]<'z'||'A'<word[i]<'Z')
+        letters = letters+1;
     }
 
 
