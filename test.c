@@ -6,6 +6,11 @@ int main (void)
 {
     string word = get_string("word:");
     int l = strlen(word);
-    printf("%i\n",l);
+    int letters = 0;
+    for(int i=0;i<l;i++)
+    {
+        if('a'<word[i]<'z')
+    }
+
 
 }
