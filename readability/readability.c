@@ -16,3 +16,7 @@ string text = get_string("Text:");
 
 
 
+int compute_letters (string text)
+{
+    
+}
