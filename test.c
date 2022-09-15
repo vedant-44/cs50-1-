@@ -2,6 +2,6 @@
 #include<stdio.h>
 int main (void)
 {
-    string word = get_ string("word:");
+    string word = get_string("word:");
     printf("%i\n",word[2]);
 }
