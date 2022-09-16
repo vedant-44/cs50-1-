@@ -48,3 +48,10 @@ int count_words (string text)
      return words;
 }
 
+
+
+int count_sentences (string text)
+{
+    
+}
+
