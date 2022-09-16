@@ -4,6 +4,7 @@
 #include <ctype.h>
 int count_letters (string text);
 int count_words (string text);
+int count_sentences (string text);
 int main(void)
 {
 string text = get_string("Text:");
@@ -52,6 +53,6 @@ int count_words (string text)
 
 int count_sentences (string text)
 {
-    
+  
 }
 
