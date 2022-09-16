@@ -43,8 +43,8 @@ int count_words (string text)
         {
             words = words+1;
         }
-        return words;
-    }
 
+    }
+     return words;
 }
 
