@@ -2,24 +2,18 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-int compute_letters (string text);
+int count_letters (string text);
 int main(void)
 {
 string text = get_string("Text:");
-int letters = compute_letters(text);
+int letters = count_letters(text);
 printf("%i\n",letters);
 }
 
 
 
 
-
-
-
-
-
-
-int compute_letters (string text)
+int count_letters (string text)
 {
     int l = strlen(text);
     int letters = 0;
@@ -32,3 +26,6 @@ int compute_letters (string text)
     }
  return letters;
 }
+
+
+
