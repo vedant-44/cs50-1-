@@ -10,8 +10,7 @@ string text =   get_string("Text:");
 int letters =   count_letters(text);
 int words   =   count_words(text);
 int sentences = count_sentences(text);
-printf("%i\n",letters);
-printf("%i\n",words);
+int index = 0.0588 * letters - 0.0296 * sentences - 15.8;
 }
 
 
