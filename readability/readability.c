@@ -12,7 +12,6 @@ int words   =   count_words(text);
 int sentences = count_sentences(text);
 printf("%i\n",letters);
 printf("%i\n",words);
-printf("%i\n",sentences);
 }
 
 
