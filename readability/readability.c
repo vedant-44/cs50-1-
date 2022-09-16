@@ -39,7 +39,7 @@ int count_words (string text)
     int words = 0;
     for(int i=0 ; i<l ; i++ )
     {
-        if(text[i]=' ')
+        if(text[i]==32)
         {
             words = words+1;
         }
