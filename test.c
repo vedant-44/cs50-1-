@@ -14,6 +14,6 @@ int main (void)
         else if(word[i]>'A' && word[i]<'Z')
         letters = letters+1;
     }
-
+printf("%i\n",letters);
 
 }
