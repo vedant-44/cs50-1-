@@ -12,7 +12,7 @@ int letters =   count_letters(text);
 int words   =   count_words(text);
 int sentences = count_sentences(text);
 float index = 0.0588*(letters*100.0)/words - 0.296*(sentences*100.0)/words;
-
+int grade = round(index);
 
 }
 
