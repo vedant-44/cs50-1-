@@ -4,5 +4,8 @@
 #include<ctype.h>
 int main (void)
 {
-  float index = 0.0588*(letters*100/words)
+    int letters = get_int("letters:");
+    int words = get_int("words:");
+    int sentences= get_int("sentences:");
+  float index = 0.0588*(letters*100/words)-0.296*(sentences*100/words);
 }
