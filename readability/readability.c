@@ -48,7 +48,7 @@ int count_words (string text)
         }
 
     }
-     return words;
+     return words+1;
 }
 
 
