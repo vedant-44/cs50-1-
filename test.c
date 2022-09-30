@@ -8,4 +8,5 @@ int main (void)
     int words = get_int("words:");
     int sentences= get_int("sentences:");
   float index = 0.0588*(letters*100/words)-0.296*(sentences*100/words);
+  printf("%f",index);
 }
