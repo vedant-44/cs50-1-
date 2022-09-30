@@ -22,7 +22,7 @@ if(grade<1)
   printf("Before grade 1\n");
 
 }
-else if()
+else if(grade>1)
 {
   printf("Grade %i\n",grade);
 }
