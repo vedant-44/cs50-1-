@@ -20,7 +20,7 @@ if(grade>16)
 }
 if(grade<1)
 {
-  printf("Before grade 1\n");
+  printf("Before Grade 1\n");
 }
 else if(grade>1 && grade<16)
 {
