@@ -11,5 +11,6 @@ int main (void)
     for(int i=0,i<l,i++)
     {
       int x = text[i]-97;
+      printf("%c",key[x]);
     }
 }
