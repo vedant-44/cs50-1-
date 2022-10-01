@@ -9,7 +9,14 @@ int main (void)
     int l = strlen(text);
     for(int i=0;i<l;i++)
     {
+      if(text[i]>=97 && text[i]<=122)
+      {
       int x = text[i]-97;
       printf("%c",key[x]);
+      }
+      else
+      {
+        printf("%c",text[i]);
+      }
     }
 }
