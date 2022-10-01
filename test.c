@@ -7,8 +7,7 @@ int main (void)
     string key = get_string("key:");
     string text = get_string("plaintext:");
     int l = strlen(text);
-    int x = 0;
-    for(int i=0,i<l,i++)
+    for(int i=0;i<l;i++)
     {
       int x = text[i]-97;
       printf("%c",key[x]);
