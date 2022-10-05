@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include<cs50.h>
-int main ()
+int main (int argc , string argv[])
 {
-    string word[] = {'h''i' , 'w''h''y'};
-    printf("%s\n",word[1]);
+
+    printf("%s\n",argv[1]);
 
 }
