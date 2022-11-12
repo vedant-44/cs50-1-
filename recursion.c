@@ -2,7 +2,7 @@
 #include<stdio.h>
 int main (void)
 {
-    int h = get_string("height:");
+    int h = get_int("height:");
     mario(h);
 }
 void mario(int n)
