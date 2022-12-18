@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+void draw(int n);
 int main()
 {
     int h;
