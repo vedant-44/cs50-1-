@@ -1,7 +1,10 @@
-include<stdio.h>
-int main void
+#include<stdio.h>
+
+int main()
 {
-   int h=get_int("height:");
+    int h;
+   printf("height");
+   scanf("%d",&h);
    draw(h);
 }
 void draw(int n)
