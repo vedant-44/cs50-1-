@@ -1,11 +1,11 @@
-sort1 uses: TODO
+sort1 uses: bubble sort
 
-How do you know?: TODO
+How do you know?time taken for already sorted is less than that for reversed and random
 
 sort2 uses:merge sort
 
-How do you know?:time taken for reversed=time for sorted 
+How do you know?:time taken for reversed=time for sorted,and time taken for random is less than sort3
 
-sort3 uses: TODO
+sort3 uses:selection sort
 
-How do you know?: TODO
+How do you know?:time taken for reversed=time for sorted,and time taken for random is more than sort2
