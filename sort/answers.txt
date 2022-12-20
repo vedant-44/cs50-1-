@@ -2,9 +2,9 @@ sort1 uses: TODO
 
 How do you know?: TODO
 
-sort2 uses: TODO
+sort2 uses:merge sort
 
-How do you know?: TODO
+How do you know?:time taken for reversed=time for sorted 
 
 sort3 uses: TODO
 
