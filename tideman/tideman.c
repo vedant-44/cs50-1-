@@ -99,8 +99,8 @@ int main(int argc, string argv[])
 // Update ranks given a new vote
 bool vote(int rank, string name, int ranks[])
 {
-    // TODO
-    return false;
+
+
 }
 
 // Update preferences given one voter's ranks
