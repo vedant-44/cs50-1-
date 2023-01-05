@@ -34,12 +34,12 @@ for (int i = 0; i <3; i++)
         int l=0;
       for(int k=0;k<3;k++)
       {
-        if(strcmp(name,candidates[k])!=0)
-        {
-            return false;
-        }
 
-        else if(strcmp(name,candidates[k])==0)
+
+
+
+
+        if(strcmp(name,candidates[k])==0)
         {
             k=ranks[l];
 
