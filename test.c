@@ -28,5 +28,8 @@ int main(int argc,string argv[])
     }
     bool vote(int ranks,string name,int ranks[])
     {
-      
+      for(int k=0;k<3;k++)
+      {
+        
+      }
     }
