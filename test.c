@@ -23,7 +23,7 @@ for (int i = 0; i <3; i++)
                 return 3;
             }
         }
-         printf("%s",ranks[1]);
+         printf("%i,%i,%i",ranks[0],ranks[1],ranks[2]);
 
 
         printf("\n");
@@ -31,14 +31,16 @@ for (int i = 0; i <3; i++)
 }
     bool vote(int rank,string name,int ranks[])
     {
+        int l=0;
       for(int k=0;k<3;k++)
       {
         if(strcmp(name,candidates[k])!=0)
         return false;
-        else
+        else if(strcomp(name,candidates[k]==0))
         {
-         name=ranks[ranks];
+            k=ranks[l];
         }
-      }
-        return true;
+        l=l+1;
+    }
+    return true;
     }
