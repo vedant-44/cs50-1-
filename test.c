@@ -33,6 +33,10 @@ int main(int argc,string argv[])
       {
         if(strcmp(name,candidates[k])!=0)
         return false;
+        else
+        {
+         name=ranks[ranks];
+        }
       }
-      
+        return true;
     }
