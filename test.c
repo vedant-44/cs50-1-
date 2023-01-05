@@ -35,12 +35,16 @@ for (int i = 0; i <3; i++)
       for(int k=0;k<3;k++)
       {
         if(strcmp(name,candidates[k])!=0)
-        return false;
+        {
+            return false;
+        }
+
         else if(strcmp(name,candidates[k])==0)
         {
             k=ranks[l];
+
         }
         l=l+1;
     }
-    return true;
+
     }
