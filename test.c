@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<cs50.h>
 #include<string.h>
+bool vote(int ranks,string name,int ranks[]);
 string candidates[];
 int main(int argc,string argv[])
 {
