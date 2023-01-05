@@ -8,10 +8,10 @@ int main(int argc,string argv[])
         argv[i+1]=candidates[i];
     }
 
-}for (int i = 0; i < voter_count; i++)
+}for (int i = 0; i <3; i++)
     {
         int ranks[3];
-        for (int j = 0; j < candidate_count; j++)
+        for (int j = 0; j <3; j++)
         {
             string name = get_string("Rank %i: ", j + 1);
 
@@ -25,4 +25,8 @@ int main(int argc,string argv[])
 
 
         printf("\n");
+    }
+    bool vote(int ranks,string name,int ranks[])
+    {
+      
     }
