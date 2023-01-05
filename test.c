@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<cs50.h>
+#include<string.h>
 string candidates[];
 int main(int argc,string argv[])
 {
@@ -30,6 +31,6 @@ int main(int argc,string argv[])
     {
       for(int k=0;k<3;k++)
       {
-        
+
       }
     }
