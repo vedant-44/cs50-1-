@@ -25,7 +25,7 @@ for (int i = 0; i <3; i++)
         }
 
 
-         printf()
+         printf("%i,%i,%i",ranks[0],ranks[1],ranks[2]);
         printf("\n");
     }
 }
