@@ -10,7 +10,7 @@ int main(int argc,string argv[])
 
 }for (int i = 0; i < voter_count; i++)
     {
-        int ranks[candidate_count];
+        int ranks[3];
         for (int j = 0; j < candidate_count; j++)
         {
             string name = get_string("Rank %i: ", j + 1);
@@ -21,8 +21,8 @@ int main(int argc,string argv[])
                 return 3;
             }
         }
+         printf("%s",ranks[1]);
 
-        record_preferences(ranks);
 
         printf("\n");
     }
