@@ -2,7 +2,7 @@
 #include<cs50.h>
 #include<string.h>
 bool vote(int rank,string name,int ranks[]);
-string candidates[];
+string candidates[3];
 int main(int argc,string argv[])
 {
     for(int i=0;i<3;i++)
