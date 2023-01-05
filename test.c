@@ -31,21 +31,7 @@ for (int i = 0; i <3; i++)
 }
     bool vote(int rank,string name,int ranks[])
     {
-        int l=0;
-      for(int k=0;k<3;k++)
-      {
+        return false;
 
-
-
-
-
-        if(strcmp(name,candidates[k])==0)
-        {
-            k=ranks[l];
-
-        }
-        l=l+1;
-    }
-    return true;
 
     }
