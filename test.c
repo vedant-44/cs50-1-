@@ -36,7 +36,7 @@ for (int i = 0; i <3; i++)
       {
         if(strcmp(name,candidates[k])!=0)
         return false;
-        else if(strcmp(name,candidates[k]==0))
+        else if(strcmp(name,candidates[k])==0)
         {
             k=ranks[l];
         }
