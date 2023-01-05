@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<cs50.h>
 #include<string.h>
-bool vote(int ranks,string name,int ranks[]);
+bool vote(int rank,string name,int ranks[]);
 string candidates[];
 int main(int argc,string argv[])
 {
@@ -29,7 +29,7 @@ for (int i = 0; i <3; i++)
         printf("\n");
     }
 }
-    bool vote(int ranks,string name,int ranks[])
+    bool vote(int rank,string name,int ranks[])
     {
       for(int k=0;k<3;k++)
       {
