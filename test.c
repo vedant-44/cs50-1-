@@ -31,6 +31,6 @@ int main(int argc,string argv[])
     {
       for(int k=0;k<3;k++)
       {
-
+        if(strcmp(name,candidates[k]))
       }
     }
