@@ -1,7 +1,6 @@
 #include<stdio.h>
-int main (void);
+#include<cs50.h>
+int main (void)
 {
-    int x=2;
-    int y==2;
-    printf("%i,%i",x,y);
+
 }
