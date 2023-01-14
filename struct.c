@@ -22,7 +22,7 @@ for(int i=0;i<2;i++)
 }
 for(int k=0;k<2;k++)
 {
-    if(strcomp(people[k].name,argv[1])==0)
+    if(strcmp(people[k].name,argv[1])==0)
     {
         printf("FOUND\n");
         printf("AGE:%i",people[k].age);
