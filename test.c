@@ -25,6 +25,7 @@ int main (int argc,string argv[])
         for(int k=0;k<3;k++)
         {
             string name = get_string("Rank%i:",k+1);
+            if(vote(j,k,name))
         }
     }
 
