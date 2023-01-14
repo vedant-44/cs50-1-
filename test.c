@@ -12,6 +12,7 @@ candidate candidates[9];
 int preferences[100][9];
 voter_count=3;
 candidate_count=3;
+bool vote(int voter,int rank,string name);
 int main (int argc,string argv[])
 {
     for(int i=0;i<3;i++)
@@ -31,8 +32,10 @@ int main (int argc,string argv[])
                 return 1;
             }
         }
+        printf("\n");
     }
-
-
-
+}
+bool vote(int voter,int rank,string name)
+{
+    
 }
