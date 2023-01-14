@@ -25,7 +25,7 @@ for(int k=0;k<2;k++)
     if(strcmp(people[k].name,argv[1])==0)
     {
 
-        printf("FOUND\nAGE:%i",people[k].age);
+        printf("FOUND\nAGE:%i\n",people[k].age);
         return 0;
     }
 
