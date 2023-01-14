@@ -13,13 +13,13 @@ int main(int argc,string argv[])
 string name=argv[1];
 for(int i=0;i<2;i++)
 {
-    for(int j=0;j<2;j++)
+    for(int j=0;j<1;j++)
     {
-      people[j].name=get_string("NAME:");
+      people[i].name=get_string("NAME:");
 
     }
     people[i].age=get_int("AGE:");
-    j==2;
+    
 }
 
 
