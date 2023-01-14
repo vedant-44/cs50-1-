@@ -27,7 +27,8 @@ int main (int argc,string argv[])
             string name = get_string("Rank%i:",k+1);
             if(!vote(j,k,name))
             {
-                printf("invalid vote");
+                printf("invalid vote\n");
+                return 1;
             }
         }
     }
