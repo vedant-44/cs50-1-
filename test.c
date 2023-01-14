@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<cs50.h>
-int main (void)
+#include<string.h>
+int main (int argc,string argv[])
 {
+    
 
 }
