@@ -24,7 +24,7 @@ int main (int argc,string argv[])
     {
         for(int k=0;k<3;k++)
         {
-            printf("Rank%i:",k+1);
+            string name = get_string("Rank%i:",k+1);
         }
     }
 
