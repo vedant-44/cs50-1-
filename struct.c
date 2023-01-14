@@ -24,15 +24,12 @@ for(int k=0;k<2;k++)
 {
     if(strcmp(people[k].name,argv[1])==0)
     {
-        printf("FOUND\n");
-        printf("AGE:%i",people[k].age);
+
+        printf("FOUND\nAGE:%i",people[k].age);
         return 0;
     }
-    else
-    {
-        printf("NOT FOUND\n");
-        return 1;
-    }
-}
 
+}
+printf("NOT FOUND\n");
+return 1;
 }
