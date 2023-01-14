@@ -18,7 +18,9 @@ for(int i=0;i<2;i++)
       people[j].name=get_string("NAME:");
 
     }
-    
+    people[i].age=get_int("AGE:");
+    j==2;
 }
+
 
 }
