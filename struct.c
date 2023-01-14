@@ -12,7 +12,7 @@ int main(int argc,string argv[])
     person people[2];
 for(int i=0;i<2;i++)
 {
-    for(int j=0;j<i+1;j++)
+    for(int j=0;j<1;j++)
     {
       people[i].name=get_string("NAME:");
 
