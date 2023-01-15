@@ -15,6 +15,7 @@ int candidate_count=3;
 bool vote(int voter,int rank,string name);
 void tabulate(void);
 bool print_winner(void);
+int find_min(void);
 int main (int argc,string argv[])
 {
     for(int i=0;i<3;i++)
@@ -78,4 +79,9 @@ for(int i=0;i<3;i++)
     }
 }
 return false;
+}
+int find_min(void)
+{
+    
+
 }
