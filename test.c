@@ -21,7 +21,7 @@ int main (int argc,string argv[])
         candidates[i].votes=0;
         candidates[i].eliminated=false;
     }
-    for(int i=0;i<3;i++);
+    for(int i=0;i<3;i++)
     {
         for(int j=0;j<3;j++)
         {
