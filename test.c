@@ -14,6 +14,7 @@ int voter_count=3;
 int candidate_count=3;
 bool vote(int voter,int rank,string name);
 void tabulate(void);
+bool print_winner(void);
 int main (int argc,string argv[])
 {
     for(int i=0;i<3;i++)
@@ -64,4 +65,8 @@ for(int i=0;i<3;i++)
     candidates[preferences[i][j]].votes++;
     j=0;
 }
+}
+bool print_winner(void)
+{
+
 }
