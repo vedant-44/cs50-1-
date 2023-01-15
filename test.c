@@ -41,6 +41,7 @@ int main (int argc,string argv[])
     {
         printf("%i\n",candidates[m].votes);
     }
+    print_winner();
 
 }
 bool vote(int voter,int rank,string name)
@@ -68,5 +69,13 @@ for(int i=0;i<3;i++)
 }
 bool print_winner(void)
 {
-
+for(int i=0;i<3;i++)
+{
+    if(candidates[i].votes>voter_count/2)
+    {
+        printf("%s",candidates[i].name);
+        return true;
+    }
+}
+return false;
 }
