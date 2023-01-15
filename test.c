@@ -34,9 +34,10 @@ int main (int argc,string argv[])
         }
         printf("\n");
     }
+    int n=0;
     for(int m=0;m<3;m++)
     {
-        printf("%i\n",preferences[m][m]);
+        printf("%i\n",preferences[n][m]);
     }
 }
 bool vote(int voter,int rank,string name)
