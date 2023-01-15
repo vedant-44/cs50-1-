@@ -58,7 +58,7 @@ void tabulate(void)
 int j=0;
 for(int i=0;i<3;i++)
 {
-    while(candidates[preferences[i][j]].eliminated=true)
+    while(candidates[preferences[i][j]].eliminated==true)
     j=j++;
     candidates[preferences[i][j]].votes=votes++;
     j=0;
