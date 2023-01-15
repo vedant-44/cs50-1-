@@ -35,11 +35,11 @@ int main (int argc,string argv[])
         }
         printf("\n");
     }
-    int n=0;
     for(int m=0;m<3;m++)
     {
-        printf("%i\n",preferences[n][m]);
+        printf("%i\n",candidates[m].votes);
     }
+
 }
 bool vote(int voter,int rank,string name)
 {
@@ -61,5 +61,6 @@ for(int i=0;i<3;i++)
     while(candidates[preferences[i][j]].eliminated=true)
     j=j++;
     candidates[preferences[i][j]].votes=votes++;
+    j=0;
 }
 }
