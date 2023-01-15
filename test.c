@@ -11,7 +11,7 @@ candidate;
 candidate candidates[9];
 int preferences[100][9];
 int voter_count=3;
-candidate_count=3;
+int candidate_count=3;
 bool vote(int voter,int rank,string name);
 int main (int argc,string argv[])
 {
