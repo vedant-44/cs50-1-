@@ -21,12 +21,12 @@ int main (int argc,string argv[])
         candidates[i].votes=0;
         candidates[i].eliminated=false;
     }
-    for(int j=0;j<3;j++);
+    for(int i=0;i<3;i++);
     {
-        for(int k=0;k<3;k++)
+        for(int j=0;j<3;j++)
         {
-            string name = get_string("Rank%i:",k+1);
-            if(!vote(j,k,name))
+            string name = get_string("Rank%i:",j+1);
+            if(!vote(i,j,name))
             {
                 printf("invalid vote\n");
                 return 1;
