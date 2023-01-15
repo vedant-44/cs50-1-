@@ -13,6 +13,7 @@ int preferences[100][9];
 int voter_count=3;
 int candidate_count=3;
 bool vote(int voter,int rank,string name);
+void tabulate(void);
 int main (int argc,string argv[])
 {
     for(int i=0;i<3;i++)
@@ -51,4 +52,14 @@ bool vote(int voter,int rank,string name)
         }
     }
  return false;
+}
+void tabulate(void)
+{
+int j=0;
+for(int i=0;i<3;i++)
+{
+    while(candidates[preferences[i][j]].eliminated=true)
+    j=j++;
+    candidates[preferences[i][j]].votes=votes++;
+}
 }
