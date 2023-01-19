@@ -16,6 +16,7 @@ bool vote(int voter,int rank,string name);
 void tabulate(void);
 bool print_winner(void);
 int find_min(void);
+bool is_tie(int min);
 int main (int argc,string argv[])
 {
     for(int i=0;i<3;i++)
@@ -45,7 +46,7 @@ int main (int argc,string argv[])
     }
     print_winner();
      printf("%i\n",min);
-     printf()
+     printf("%i\n",is_tie(int min));
 }
 bool vote(int voter,int rank,string name)
 {
