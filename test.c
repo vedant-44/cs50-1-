@@ -95,3 +95,4 @@ int find_min(void)
     }
    return min;
 }
+bool is_tie()
