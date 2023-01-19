@@ -46,7 +46,7 @@ int main (int argc,string argv[])
     }
     print_winner();
      printf("%i\n",min);
-     printf("%i\n",is_tie(int min));
+     printf("%i\n",is_tie(min));
 }
 bool vote(int voter,int rank,string name)
 {
