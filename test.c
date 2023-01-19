@@ -17,6 +17,7 @@ void tabulate(void);
 bool print_winner(void);
 int find_min(void);
 bool is_tie(int min);
+void eliminate(int min);
 int main (int argc,string argv[])
 {
     for(int i=0;i<3;i++)
@@ -108,4 +109,15 @@ bool is_tie(int min)
         }
     }
     return true;
+}
+void eliminate(int min)
+{
+for(int i=0;i<candidate_count;i++)
+{
+    if(candidates[i].eliminated==false)
+    {
+        if(candidates[i].votes==min)
+        candidates[i].eliminated=true;
+    }
+}
 }
