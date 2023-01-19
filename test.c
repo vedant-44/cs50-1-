@@ -82,6 +82,15 @@ return false;
 }
 int find_min(void)
 {
-    
+    int min=1000;
+    for(int i=0;i<n;i++)
+    {
+        if(candidates[i].eliminated==false)
+        {
+            if(candidates[i].votes<=min)
+            min=candidates[i].votes
 
+        }
+    }
+   return min;
 }
