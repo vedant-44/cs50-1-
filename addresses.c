@@ -8,6 +8,6 @@ printf("%s\n",s);
 int k=50;
 printf("%i\n",*&k);
 int* a=&k;
-printf("%p",a);
-printf("%i",*a);
+printf("%p\n",a);
+printf("%i\n",*a);
 }
