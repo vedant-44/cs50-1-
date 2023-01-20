@@ -2,5 +2,5 @@
 int main(void)
 {
     char* a="HI!";
-    printf("%c",)
+    printf("%s",a);
 }
