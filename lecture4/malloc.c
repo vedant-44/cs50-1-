@@ -6,4 +6,5 @@
 int main(void)
 {
     char* a=get_string("a:");
+    char* b;
 }
