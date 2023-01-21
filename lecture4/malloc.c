@@ -5,8 +5,15 @@
 #include<stdlib.h>
 int main(void)
 {
+
     char* a= get_string("a:");
     char* b= malloc(strlen(a)+1);
-    
+    int n= strlen(a);
+    for(int i=0;i<=n;i++)
+    {
+        b[i]=a[i];
+    }
+    toupper(b);
+    printf("a:%s\nb:%s\n",a,b);
 
 }
