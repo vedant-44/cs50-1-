@@ -13,7 +13,7 @@ int main(void)
     {
         b[i]=a[i];
     }
-    toupper(b[0]);
+    b[0] = toupper(b[0]);
     printf("a:%s\nb:%s\n",a,b);
 
 }
