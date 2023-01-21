@@ -5,7 +5,8 @@
 #include<stdlib.h>
 int main(void)
 {
-    char* a=get_string("a:");
-    char* b=
+    char* a= get_string("a:");
+    char* b= malloc(strlen(a)+1);
+    
 
 }
