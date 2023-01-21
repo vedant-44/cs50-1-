@@ -3,6 +3,7 @@
 #include<string.h>
 #include<ctype.h>
 #include<stdlib.h>
+bool test(void);
 int main(void)
 {
 
@@ -14,6 +15,11 @@ int main(void)
         b[i]=a[i];
     }
     b[0] = toupper(b[0]);
+    test();
     printf("a:%s\nb:%s\n",a,b);
 
+}
+bool test(void)
+{
+return true;
 }
