@@ -2,8 +2,6 @@
 #include<stdlib.h>
 #include<cs50.h>
  void swap();
- int x=1;
- int y=2;
 int main(void)
 {
 
