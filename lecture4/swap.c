@@ -1,7 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<cs50.h>
- void swap(int a, int b);
+ void swap(int x, int y);
+ int x=1;
+ int y=2;
 int main(void)
 {
     int x=1;
@@ -12,9 +14,9 @@ int main(void)
 
 
 }
- void swap(int a, int b)
+ void swap(int x, int y)
  {
-   int temp= a;
-   a=b;
-   b=temp;
+   int temp= x;
+   x=y;
+   y=temp;
  }
