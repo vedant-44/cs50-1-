@@ -3,7 +3,7 @@
 #include<string.h>
 typedef struct
 {
-    string name;
+    char* name;
     int age;
 }
 person;
