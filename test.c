@@ -1,9 +1,13 @@
 #include<stdio.h>
 int main(void)
 {
-    char* s = NULL;
-    s="abcd";
-    *s='k';
-    printf("%c\n",s[0]);
+
+    char arr[]="abcd";
+    for(int i=0;i<4;i++)
+    {
+        printf("Alphabet\n");
+        scanf("%c",&arr[i]);
+    }
+    printf("%c\n",arr[0]);
 
 }
