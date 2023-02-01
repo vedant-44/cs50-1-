@@ -9,6 +9,7 @@ int main(void)
 person;
 person people;
 people.arr[0]='a';
+printf("%c\n",people.arr[0]);
 
 
 
