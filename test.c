@@ -4,9 +4,10 @@
 {
 typedef struct car
 {
-  char plate[7];
+  char* plate;
 }
 car_t;
 car_t mycar;
 mycar.plate = "CS50";
+printf("%s",mycar.plate);
 }
