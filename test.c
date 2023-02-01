@@ -3,7 +3,7 @@ int main(void)
 {
     char* s = NULL;
     s="abcd";
-    *s[1]='k';
-    printf("%c\n",s[1]);
+    *s='k';
+    printf("%c\n",s[0]);
 
 }
