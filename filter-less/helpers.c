@@ -26,9 +26,20 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
          int sr= 0.393*image[i][j].rgbtRed+0.769*image[i][j].rgbtGreen+0.189*image[i][j].rgbtBlue;
          int sg= 0.349*image[i][j].rgbtRed+0.686*image[i][j].rgbtGreen+0.168*image[i][j].rgbtBlue;
          int sb= 0.272*image[i][j].rgbtRed+0.534*image[i][j].rgbtGreen+0.131*image[i][j].rgbtBlue;
+         if(sr<=255)
          image[i][j].rgbtRed=sr;
+         else
+         image[i][j].rgbtRed=255;
+
+          if(sb<=255)
          image[i][j].rgbtBlue=sb;
+         else
+         image[i][j].rgbtBlue=255
+
+         if(sg<=255)
          image[i][j].rgbtGreen=sg;
+         else
+         image[i][j].rgbtGreen=255;
 
 
         }
