@@ -10,8 +10,11 @@ int main(void)
   printf("s:\n");
   scanf("%s",s);
   a = malloc(strlen(s)+1);
-  *a=*s;
-
+  for(int i=0;i<strlen(s)+1;i++)
+  {
+    a[i]=s[i];
+  }
+a[0]=toupper(a[0]);
   printf("s:%s\na:%s\n",s,a);
 
 free(a);
