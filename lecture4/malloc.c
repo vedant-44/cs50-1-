@@ -15,7 +15,7 @@ int main(void)
     a[i]=s[i];
   }
 a[0]=toupper(a[0]);
-  printf("s:%s\na:%s\n",s,a);
+  printf("%s\n",a);
 
 free(a);
 
