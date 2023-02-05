@@ -7,7 +7,7 @@ int main(void)
 {
   char* s=NULL;
   char* a=NULL;
-  printf("s:\n");
+  printf("s:");
   scanf("%s",s);
   a = malloc(strlen(s)+1);
   for(int i=0;i<strlen(s)+1;i++)
