@@ -9,7 +9,7 @@ int main(void)
  printf("s:\n");
  scanf("%s",s);
  printf("%s\n",s);
- a=s;
+
 
 
 }
