@@ -5,7 +5,7 @@
 #include<stdlib.h>
 int main(void)
 {
-  char* s,a = NULL;
+  char* s=NULL,*a=NULL;
   printf("s:\n");
   scanf("%s",s);
   a = malloc(strlen(s)+1);
