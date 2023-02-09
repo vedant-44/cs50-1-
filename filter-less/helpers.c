@@ -58,7 +58,9 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
             break;
             else
             {
-            image[i][j]=image[i][j+k];
+            image[i][j].rgbtRed=image[i][j+k].rgbtRed;
+            image[i][j].rgbtBlue=image[i][j+k].rgbtBlue;
+            image[i][j].rgbtGreen=image[i][j+k].rgbtGreen;
             k=k-2;
             }
         }
