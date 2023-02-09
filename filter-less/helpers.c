@@ -56,8 +56,11 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
         {
             if(k<=0)
             break;
+            else
+            {
             image[i][j]=image[i][j+k];
             k=k-2;
+            }
         }
     }
 }
