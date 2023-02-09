@@ -50,6 +50,7 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
     int k = width-1;
+    int l=0;
     for(int i=0;i<height;i++)
     {
         for(int j=0;j<width;j++)
