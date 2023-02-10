@@ -1,5 +1,5 @@
 #include "helpers.h"
-#include<maths.h>
+#include<math.h>
 
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
@@ -8,10 +8,10 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
   {
     for(int j=0;j<width;j++)
     {
-        int average = (image[i][j].rgbtRed + image[i][j].rgbtBlue+ image[i][j].rgbtGreen)/3;
-        image[i][j].rgbtRed=average;
-        image[i][j].rgbtBlue=average;
-        image[i][j].rgbtGreen=average;
+        float average = (image[i][j].rgbtRed + image[i][j].rgbtBlue+ image[i][j].rgbtGreen)/3.0;
+        image[i][j].rgbtRed=round(average);
+        image[i][j].rgbtBlue=round(average);
+        image[i][j].rgbtGreen=round(average);
     }
   }
 
@@ -24,9 +24,9 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
     {
         for(int j=0;j<width;j++)
         {
-         int sr= 0.393*image[i][j].rgbtRed+0.769*image[i][j].rgbtGreen+0.189*image[i][j].rgbtBlue;
-         int sg= 0.349*image[i][j].rgbtRed+0.686*image[i][j].rgbtGreen+0.168*image[i][j].rgbtBlue;
-         int sb= 0.272*image[i][j].rgbtRed+0.534*image[i][j].rgbtGreen+0.131*image[i][j].rgbtBlue;
+         float sr= round(0.393*image[i][j].rgbtRed+0.769*image[i][j].rgbtGreen+0.189*image[i][j].rgbtBlue);
+         float sg= round(0.349*image[i][j].rgbtRed+0.686*image[i][j].rgbtGreen+0.168*image[i][j].rgbtBlue);
+         float sb= round(0.272*image[i][j].rgbtRed+0.534*image[i][j].rgbtGreen+0.131*image[i][j].rgbtBlue);
          if(sr<=255)
          image[i][j].rgbtRed=sr;
          else
