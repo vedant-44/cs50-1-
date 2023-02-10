@@ -77,7 +77,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
     RGBTRIPLE c[height][width];
-
+//copying in new 2D array
     for(int i=0;i<height;i++)
     {
         for(int j=0;j<width;j++)
@@ -97,7 +97,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             float a2=c[i][j].rgbtBlue;
             float a3=c[i][j].rgbtGreen;
             float counter=1;
-
+            //Checking for each box at distance of one
              if(i-1>=0 && j-1>=0)
             {
               a1 = a1+c[i-1][j-1].rgbtRed;
