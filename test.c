@@ -9,7 +9,7 @@ int main(void)
     if(true)
     {
 
-        FILE* img=fopen("photo.csv","w");
+        FILE* img=fopen
         fprintf(img,"%s",name);
         fclose(img);
 
