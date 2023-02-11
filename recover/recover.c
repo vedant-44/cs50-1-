@@ -5,7 +5,7 @@ typedef uint8_t byte;
 
 int main(int argc, char *argv[])
 {
-    byte arr[1000];
+    byte arr[512];
     if(argc<2 || argc>2)
     {
         return 1;
@@ -15,7 +15,8 @@ int main(int argc, char *argv[])
 
     while(fread(arr,1,512,mc)==512)
     {
-      
+        while()
+
     }
 
 
