@@ -9,6 +9,10 @@ int main(int argc, char *argv[])
     byte arr[512];
     bool flag=false;
     char* photo=malloc(5);
+    int i=0;
+
+
+
     if(argc<2 || argc>2)
     {
         return 1;
@@ -27,17 +31,23 @@ int main(int argc, char *argv[])
         }
 
 
-        if(arr[0]=0xff || arr[1]=0xd8 || arr[2]=0xff || (arr[3]&0xf0)=0xe0)
+        if(arr[0]==0xff || arr[1]==0xd8 || arr[2]==0xff || (arr[3]&0xf0)==0xe0)
         {
-          sprintf(*photo,"%03i.jpg",i);
-          FILE* img=fopen(*photo,"w");
+          sprintf(photo,"%03i.jpg",i);
+          FILE* img=fopen(photo,"w");
           fwrite(arr,1,512,img);
           i++;
           flag =true;
         }
+        else
+        {
+            FILE* img=fopen(photo,"a");
+            fwrite(arr,1,512,img);
+        }
 
 
     }
+    free(photo);
 
 
 
