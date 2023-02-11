@@ -9,6 +9,6 @@ int main(void)
     {
         sprintf(photo,"%03i.jpeg",i);
         FILE* img=fopen(photo,"w");
-        
+        fprintf(img,"%s",name);
     }
 }
