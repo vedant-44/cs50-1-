@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+typedef uint8_t byte;
 
 int main(int argc, char *argv[])
 {
@@ -7,6 +8,7 @@ int main(int argc, char *argv[])
     {
         return 1;
     }
-    FILE *mc=fopen(argv[1])
+    FILE *mc=fopen(argv[1],"r");
+
 
 }
