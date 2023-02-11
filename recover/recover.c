@@ -15,7 +15,10 @@ int main(int argc, char *argv[])
 
     while(fread(arr,1,512,mc)==512)
     {
-        while(arr[0]!=0xff || arr[1]!=0xd8 || arr[2]!=0xff || arr[3])
+        while(arr[0]!=0xff || arr[1]!=0xd8 || arr[2]!=0xff || (arr[3]&0xf0)!=0xe0)
+        {
+            continue;
+        }
 
     }
 
