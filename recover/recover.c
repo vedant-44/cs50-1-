@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 {
     byte arr[512];
     bool flag=false;
-    char* photo=malloc(5);
+    char* photo=malloc(100);
     int i=0;
 
 
@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 
 
     }
-    free(photo);
+free(photo);
 
 
 
