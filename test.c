@@ -12,9 +12,9 @@ int main(void)
         FILE* img=fopen("photo.csv","w");
         fprintf(img,"%s",name);
         fclose(img);
-    
+
     }
-   FILE* img=fopen("photo.csv","w");
+   FILE* img=fopen("photo.csv","a");
     fprintf(img,"\nabhinav");
 
 }
