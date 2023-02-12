@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
         }
         else
         {
-            FILE* img=fopen(photo,"a");
+             img=fopen(photo,"a");
             fwrite(arr,1,512,img);
         }
 
