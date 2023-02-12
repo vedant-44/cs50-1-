@@ -13,7 +13,11 @@ int main(int argc, char *argv[])
     FILE* img=NULL;
 
 
-
+ if (argc != 2)
+    {
+        fprintf(stderr, "Usage: ./recover image\n");
+        return 1;
+    }
 
 
 
