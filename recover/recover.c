@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
     byte arr[512];
     bool flag=false;
     char* photo=malloc(100);
-    int i=0;
+    int i=1;
     FILE* img=NULL;
 
 
