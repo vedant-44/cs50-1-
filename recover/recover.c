@@ -43,11 +43,11 @@ int main(int argc, char *argv[])
         }
         else
         {
-            fwrite()
+            fwrite(arr,1,512,img);
         }
     }
 }
-
+free(photo);
 
 
 
