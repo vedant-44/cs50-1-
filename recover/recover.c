@@ -27,24 +27,39 @@ int main(int argc, char *argv[])
         {
             continue;
         }
-
-
-
-       else if(arr[0]==0xff || arr[1]==0xd8 || arr[2]==0xff || (arr[3]&0xf0)==0xe0)
+        if(arr[0]==0xff || arr[1]==0xd8 || arr[2]==0xff || (arr[3]&0xf0)==0xe0)
         {
-          sprintf(photo,"%03i.jpg",i);
-           img=fopen(photo,"w");
-          fwrite(arr,1,512,img);
-          i++;
-          flag =true;
+            if(flag==false)
+            {
+                sprintf(photo,"%03i.jpg",0);
+                img=fopen(photo,"w");
+                fwrite(arr,1,512,img);
+                flag=true;
+            }
+            else
+            {
+                fclose(img);
+                sprintf(photo,"%03i.jpg",i);
+                img=fopen(photo,"w");
+                fwrite(arr,1,512,img);
+                i++;
+            }
         }
         else
         {
-             img=fopen(photo,"a");
+            img=fopen(photo,"a");
             fwrite(arr,1,512,img);
         }
-
     }
+free(photo);
+
+
+
+
+
+
+
+
 }
 
 
