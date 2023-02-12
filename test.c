@@ -3,7 +3,6 @@
 #include<stdlib.h>
 int main(void)
 {
-
     int i=0;
     char* name=get_string("name:");
     if(true)
