@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
             {
                 sprintf(photo,"%03i.jpg",0);
                 img=fopen(photo,"w");
-                fwrite(arr,1,512,img);
+                fwrite(arr,512,1,img);
                 flag=true;
             }
             else
@@ -41,14 +41,14 @@ int main(int argc, char *argv[])
                 fclose(img);
                 sprintf(photo,"%03i.jpg",i);
                 img=fopen(photo,"w");
-                fwrite(&arr,1,512,img);
+                fwrite(arr,512,1,img);
                 i++;
             }
         }
         else
         {
 
-            fwrite(&arr,1,512,img);
+            fwrite(arr,512,1,img);
         }
     }
 
