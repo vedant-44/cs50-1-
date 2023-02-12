@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -7,9 +6,9 @@ typedef uint8_t byte;
 
 int main(int argc, char *argv[])
 {
-    
+    byte arr[512];
     bool flag=false;
-    char photo[1000];
+    char* photo = malloc(10);
     int i=1;
     FILE* img=NULL;
 
@@ -53,8 +52,8 @@ int main(int argc, char *argv[])
         }
     }
 
-free(arr);
 
+free(photo);
 
 
 
@@ -62,6 +61,7 @@ free(arr);
 
 
 }
+
 
 
 
