@@ -26,11 +26,11 @@ int main(int argc, char *argv[])
     while(fread(arr,512,1,mc)==1)
     {
 
-        if((arr[0]!=0xff || arr[1]!=0xd8 || arr[2]!=0xff || (arr[3]&0xf0)!=0xe0) && counter==0)
-        {
-            continue;
-        }
-       else if(arr[0]==0xff || arr[1]==0xd8 || arr[2]==0xff || (arr[3]&0xf0)==0xe0)
+
+
+
+
+        if(arr[0]==0xff || arr[1]==0xd8 || arr[2]==0xff || (arr[3]&0xf0)==0xe0)
         {
             if(counter !=0)
             {
@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
             fwrite(arr,1,512,img);
             counter++;
         }
-        else
+        else if(counter>0)
         {
             fwrite(arr,1,512,img);
         }
