@@ -7,7 +7,7 @@ typedef uint8_t byte;
 
 int main(int argc, char *argv[])
 {
-    unsigned char *arr=malloc[512];
+    unsigned char *arr = malloc(512);
     bool flag=false;
     char photo[1000];
     int i=1;
