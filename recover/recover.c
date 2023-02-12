@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
 
 
-    if(argc<2 || argc>2)
+    if(argc!=1)
     {
         return 1;
     }
@@ -23,44 +23,16 @@ int main(int argc, char *argv[])
 
     while(fread(arr,512,1,mc)==1)
     {
-        if((arr[0]!=0xff || arr[1]!=0xd8 || arr[2]!=0xff || (arr[3]&0xf0)!=0xe0) && flag==false)
-        {
-            continue;
-        }
-        if(arr[0]==0xff || arr[1]==0xd8 || arr[2]==0xff || (arr[3]&0xf0)==0xe0)
-        {
-            if(flag==false)
-            {
-                sprintf(photo,"%03i.jpg",0);
-                img=fopen(photo,"w");
-                fwrite(arr,512,1,img);
-                flag=true;
-            }
-            else
-            {
-                fclose(img);
-                sprintf(photo,"%03i.jpg",i);
-                img=fopen(photo,"w");
-                fwrite(arr,512,1,img);
-                i++;
-            }
-        }
-        else
-        {
 
-            fwrite(arr,512,1,img);
-        }
     }
-
-
-
-free(photo);
-
-
-
-
-
 }
+
+
+
+
+
+
+
 
 
 
