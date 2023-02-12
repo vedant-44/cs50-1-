@@ -16,7 +16,7 @@ int main(void)
         }
         else
         {
-            img=fopen(photo,"a");
+            
             fwrite(arr,7,2,img);
         }
 
