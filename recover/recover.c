@@ -12,20 +12,16 @@ int main(int argc, char *argv[])
     int i=1;
     FILE* img=NULL;
 
-
- if (argc != 2)
-    {
-        fprintf(stderr, "Usage: ./recover image\n");
-        return 1;
-    }
-
-
+if(argc<2 || argc>2)
+{
+    return 1;
+}
 
 
 
     FILE *mc=fopen(argv[1],"r");
 
-    while(fread(arr,512,1,mc))
+    while(fread(arr,1,512,mc)==512)
     {
         if((arr[0]!=0xff || arr[1]!=0xd8 || arr[2]!=0xff || (arr[3]&0xf0)!=0xe0) && flag==false)
         {
@@ -37,7 +33,7 @@ int main(int argc, char *argv[])
             {
                 sprintf(photo,"%03i.jpg",0);
                 img=fopen(photo,"w");
-                fwrite(arr,512,1,img);
+                fwrite(arr,1,512,img);
                 flag=true;
             }
             else
@@ -45,14 +41,14 @@ int main(int argc, char *argv[])
                 fclose(img);
                 sprintf(photo,"%03i.jpg",i);
                 img=fopen(photo,"w");
-                fwrite(arr,512,1,img);
+                fwrite(arr,1,512,img);
                 i++;
             }
         }
         else
         {
             img=fopen(photo,"a");
-            fwrite(arr,512,1,img);
+            fwrite(arr,1,512,img);
         }
     }
 
