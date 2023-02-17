@@ -17,6 +17,11 @@ int main(int argc,char*argv[])
         n->next=list;
         list=n;
     }
-    
+    node* ptr=list;
+    while(ptr!=NULL)
+    {
+      printf("%i\n",ptr->number);
+      ptr=ptr->next;
+    }
 
 }
