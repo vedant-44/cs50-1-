@@ -5,13 +5,18 @@ int main(int argc,char*argv[])
     typedef struct node
     {
         int number;
-        node* next;
+        struct node* next;
     }
     node;
-    for(int i=0;i<argc-1;i++)
+    node* list=NULL;
+    for(int i=1;i<argc;i++)
     {
-        node* list=NULL;
+
         node* n=malloc(sizeof(node));
-        n->number=
+        n->number=atoi(argv[i]);
+        n->next=list;
+        list=n;
     }
+    
+
 }
