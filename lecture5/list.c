@@ -18,10 +18,11 @@ int main(int argc,char*argv[])
         list=n;
     }
     node* ptr=list;
-    node* ptr2=ptr;
+    node* ptr2=NULL;
     while(ptr!=NULL)
     {
       printf("%i\n",ptr->number);
+      ptr2=ptr;
       ptr=ptr->next;
 
     }
