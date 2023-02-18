@@ -22,6 +22,7 @@ int main(int argc,char*argv[])
     {
       printf("%i\n",ptr->number);
       ptr=ptr->next;
+      node* ptr2=
     }
 
 }
