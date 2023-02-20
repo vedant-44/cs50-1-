@@ -34,7 +34,13 @@ if(generations>1)
         char a2=random_allele();
         if((a1==(p->parents[0])->alleles[0] ||a1==(p->parents[0])->alleles[1] ||a1==(p->parents[1])->alleles[0] ||a1==(p->parents[1])->alleles[1])&&(a2==(p->parents[0])->alleles[0] ||a2==(p->parents[0])->alleles[1] ||a2==(p->parents[1])->alleles[0] ||a2==(p->parents[1])->alleles[1]))
         {
-            
+            p->alleles[0]=a1;
+            p->alleles[1]=a2;
+            flag=true;
+        }
+        else
+        {
+            continue;
         }
     }
 
