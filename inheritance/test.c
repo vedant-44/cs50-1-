@@ -15,5 +15,17 @@ int main(void)
 }
 person* createfamily(generations)
 {
+person* p=malloc(sizeof(person));
+if(generations>1)
+{
+    p->parents[0]=createfamily(generations-1);
+    p->parents[1]=createfamily(generations-1);
 
+}
+else
+{
+    p->parents[0]=NULL;
+    p->parents[1]=NULL;
+}
+return p;
 }
