@@ -39,7 +39,7 @@ int main(void)
 // Create a new individual with `generations`
 person *create_family(int generations)
 {
-    bool flag=false;
+    
     // TODO: Allocate memory for new person
     person* p=malloc(sizeof(person));
 
@@ -55,24 +55,22 @@ person *create_family(int generations)
         p->parents[1]=parent1;
 
         // TODO: Randomly assign current person's alleles based on the alleles of their parents
-        while(flag==false)
+         bool flag = false;
+    while(flag==false)
+    {
+        char a1=random_allele();
+        char a2=random_allele();
+        if((a1==(p->parents[0])->alleles[0] ||a1==(p->parents[0])->alleles[1] ||a1==(p->parents[1])->alleles[0] ||a1==(p->parents[1])->alleles[1])&&(a2==(p->parents[0])->alleles[0] ||a2==(p->parents[0])->alleles[1] ||a2==(p->parents[1])->alleles[0] ||a2==(p->parents[1])->alleles[1]))
         {
-            char a1=random_allele();
-            char a2=random_allele();
-            if((a1!=(p->parents[0])->alleles[0]||a1!=(p->parents[0])->alleles[1]) && (a2!=(p->parents[1])->alleles[0]||a2!=(p->parents[1])->alleles[1]))
-            {
-                continue;
-            }
-            else
-            {
-                p->alleles[0]=a1;
-                p->alleles[1]=a2;
-                flag=true;
-            }
-
-
-
+            p->alleles[0]=a1;
+            p->alleles[1]=a2;
+            flag=true;
         }
+        else
+        {
+            continue;
+        }
+    }
 
     }
 
