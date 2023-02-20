@@ -13,7 +13,7 @@ int main(void)
 
 
 }
-p* createfamily(generations)
+person* createfamily(generations)
 {
 
 }
