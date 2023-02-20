@@ -27,7 +27,12 @@ if(generations>1)
 {
     p->parents[0]=createfamily(generations-1);
     p->parents[1]=createfamily(generations-1);
-    
+    bool flag == false;
+    while(flag==false)
+    {
+        char a1=random_allele();
+        char a2=random_allele();
+    }
 
 }
 else
