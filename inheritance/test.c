@@ -32,7 +32,10 @@ if(generations>1)
     {
         char a1=random_allele();
         char a2=random_allele();
-        if((a1==(p->parents[0])->alleles[0] ||a1==(p->parents[0])->alleles[1] ||a1==(p->parents[1])->alleles[0] ||a1==(p->parents[1])->alleles[1])&&(a2==(p->parents[0])->alleles[0] ||a2==(p->parents[0])->alleles[1] ||a2==(p->parents[1])->alleles[0] ||a2==(p->parents[1])->alleles[1])
+        if((a1==(p->parents[0])->alleles[0] ||a1==(p->parents[0])->alleles[1] ||a1==(p->parents[1])->alleles[0] ||a1==(p->parents[1])->alleles[1])&&(a2==(p->parents[0])->alleles[0] ||a2==(p->parents[0])->alleles[1] ||a2==(p->parents[1])->alleles[0] ||a2==(p->parents[1])->alleles[1]))
+        {
+            
+        }
     }
 
 }
