@@ -65,7 +65,7 @@ person *create_family(int generations)
         {
             p->alleles[0]=a1;
             p->alleles[1]=a2;
-            return;
+            break;
         }
 
 
