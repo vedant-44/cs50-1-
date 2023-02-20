@@ -32,7 +32,7 @@ if(generations>1)
     {
         char a1=random_allele();
         char a2=random_allele();
-        if(a1==)
+        if(a1==p->parents[0]
     }
 
 }
