@@ -61,7 +61,7 @@ person *create_family(int generations)
         char a1=random_allele();
         char a2=random_allele();
 
-        if()
+        if(a1==(parent0->)
         {
             p->alleles[0]=a1;
             p->alleles[1]=a2;
