@@ -27,6 +27,7 @@ if(generations>1)
 {
     p->parents[0]=createfamily(generations-1);
     p->parents[1]=createfamily(generations-1);
+    
 
 }
 else
