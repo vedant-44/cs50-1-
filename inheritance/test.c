@@ -33,7 +33,28 @@ else
 {
     p->parents[0]=NULL;
     p->parents[1]=NULL;
+    p->alleles[0]=random_allele();
+    p->alleles[1]=random_allele();
 
 }
 return p;
+}
+
+
+
+char random_allele()
+{
+    int r = rand() % 3;
+    if (r == 0)
+    {
+        return 'A';
+    }
+    else if (r == 1)
+    {
+        return 'B';
+    }
+    else
+    {
+        return 'O';
+    }
 }
