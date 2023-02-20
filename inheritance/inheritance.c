@@ -60,8 +60,8 @@ person *create_family(int generations)
     {
         char a1=random_allele();
         char a2=random_allele();
-        person* ptr1=
-        if((a1==((p->parents[0])->alleles[0])||a1==((p->parents[0])->alleles[1])) && (a2==((p->parents[1])->alleles[0])||a2==((p->parents[1])->alleles[1])))
+
+        if()
         {
             p->alleles[0]=a1;
             p->alleles[1]=a2;
