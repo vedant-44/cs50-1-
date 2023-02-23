@@ -3,8 +3,8 @@
 #include <ctype.h>
 #include <stdbool.h>
 #include <string.h>
+bool load(const char *dictionary);
 
-#include "dictionary.h"
 
 // Represents a node in a hash table
 typedef struct node
@@ -19,3 +19,36 @@ const unsigned int N = 676;
 
 // Hash table
 node *table[N];
+int main(void)
+{
+
+
+
+}
+
+
+
+ bool load(const char *dictionary)
+{
+
+   FILE* d=fopen(dictionary,"r");
+
+    if(d==NULL)
+    return false;
+
+    char* a=NULL;
+    while(fscanf(d,"%s",a)!=EOF)
+    {
+      node* n=malloc(sizeof(node));
+      if(n==NULL)
+      return false;
+      strcpy(n->word,a);
+      n->next=NULL;
+      unsigned int index=hash(a);
+      n->next=table[index];
+      table[index]=n;
+      counter++;
+    }
+return true;
+
+}
