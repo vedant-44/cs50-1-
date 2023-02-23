@@ -32,7 +32,14 @@ bool check(const char *word)
  node* ptr=table[index];
  while(ptr!=NULL)
  {
-    if(strcmp())
+    if(strcmp(ptr->word,word)==0)
+    {
+        return true;
+    }
+    else
+    {
+        ptr=ptr->next;
+    }
  }
 
 
