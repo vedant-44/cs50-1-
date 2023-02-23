@@ -24,8 +24,8 @@ node *table[N];
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
 {
-    // TODO
-    return false;
+   
+
 }
 
 // Hashes word to a number
@@ -65,7 +65,7 @@ return true;
 unsigned int size(void)
 {
     // TODO
-    
+
     return counter;
 }
 
