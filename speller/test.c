@@ -3,6 +3,7 @@
 #include <ctype.h>
 #include <stdbool.h>
 #include <string.h>
+#define LENGTH 45
 bool load(const char *dictionary);
 
 
