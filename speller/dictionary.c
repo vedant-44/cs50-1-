@@ -28,7 +28,12 @@ bool check(const char *word)
    for(int i=0;i<l;i++)
  word[i]=tolower(word[i]);
 
- 
+ unsigned int index = hash(word);
+ node* ptr=table[index];
+ while(ptr!=NULL)
+ {
+    if(strcmp())
+ }
 
 
 
