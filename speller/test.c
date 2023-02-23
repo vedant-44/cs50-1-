@@ -24,8 +24,8 @@ const unsigned int N = 676;
 node *table[N];
 int main(void)
 {
-bool flag =load(dictionary1);
-printf("%i\n",flag);
+
+FILE* f=fopen(dictionary1,"w");
 
 
 }
