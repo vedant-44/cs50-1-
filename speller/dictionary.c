@@ -24,6 +24,7 @@ node *table[N];
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
 {
+    char temp[]
     int l=strlen(word);
    for(int i=0;i<l;i++)
  word[i]=tolower(word[i]);
