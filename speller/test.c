@@ -52,3 +52,8 @@ int main(void)
 return true;
 
 }
+unsigned int hash(const char *word)
+{
+    // TODO: Improve this hash function
+     return (word[0]-'a')*26 + word[1]-'a';
+}
