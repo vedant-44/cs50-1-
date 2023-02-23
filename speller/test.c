@@ -21,7 +21,8 @@ const unsigned int N = 676;
 node *table[N];
 int main(void)
 {
-
+bool flag =load(dictionaries/small);
+printf("%i\n",flag);
 
 
 }
