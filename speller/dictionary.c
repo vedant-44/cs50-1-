@@ -65,6 +65,7 @@ return true;
 unsigned int size(void)
 {
     // TODO
+    
     return counter;
 }
 
