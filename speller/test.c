@@ -5,6 +5,7 @@
 #include <string.h>
 #define LENGTH 45
 bool load(const char *dictionary);
+char* dictionary="dictionaries/small";
 
 
 // Represents a node in a hash table
@@ -22,7 +23,7 @@ const unsigned int N = 676;
 node *table[N];
 int main(void)
 {
-bool flag =load(dictionaries/small);
+bool flag =load(dictionary);
 printf("%i\n",flag);
 
 
