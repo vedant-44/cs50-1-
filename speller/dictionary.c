@@ -24,16 +24,17 @@ node *table[N];
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
 {
-    char temp[]
-    int l=strlen(word);
+    char* temp=NULL;
+    strcpy(temp,word);
+    int l=strlen(temp);
    for(int i=0;i<l;i++)
- word[i]=tolower(word[i]);
+ temp[i]=tolower(temp[i]);
 
- unsigned int index = hash(word);
+ unsigned int index = hash(temp);
  node* ptr=table[index];
  while(ptr!=NULL)
  {
-    if(strcmp(ptr->word,word)==0)
+    if(strcmp(ptr->word,temp)==0)
     {
         return true;
     }
@@ -41,10 +42,11 @@ bool check(const char *word)
     {
         ptr=ptr->next;
     }
+
  }
 
 
-
+return false;
 }
 
 // Hashes word to a number
