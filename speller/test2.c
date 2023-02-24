@@ -2,7 +2,7 @@
 int main(void)
 {
     char* dictionary="dictionaries/less";
-    char* word=NULL;
+    char word[45];
     FILE* f=fopen(dictionary,"r");
 
     for(int i=0;i<2;i++)
