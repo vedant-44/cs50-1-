@@ -21,12 +21,17 @@ node *table[N];
 int main(void)
 {
 char* dictionary="dictionaries/small";
+FILE* f=fopen(dictionary,"r");
 }
 
 
 bool load(const char* dictionary)
 {
-   
+    char word[50];
+  while(fscanf(f,"%s",word)!=EOF)
+  {
+    
+  }
 }
 
 
