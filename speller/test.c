@@ -27,9 +27,9 @@ bool flag=load(dictionary1);
 
 bool load(const char* dictionary)
 {
-    char word[50];
+    char string[50];
     FILE* f=fopen(dictionary,"r");
-  while(fscanf(f,"%s",word)!=EOF)
+  while(fscanf(f,"%s",string)!=EOF)
   {
     unsigned int index=hash(word);
   }
