@@ -5,7 +5,7 @@
 #include <string.h>
 #include "dictionary.h"
 
-
+const char* dictionary1="dictionaries/small";
 typedef struct node
 {
     char word[LENGTH + 1];
@@ -20,17 +20,18 @@ const unsigned int N = 26;
 node *table[N];
 int main(void)
 {
-char* dictionary="dictionaries/small";
-FILE* f=fopen(dictionary,"r");
+
+bool flag=load(dictionary1);
 }
 
 
 bool load(const char* dictionary)
 {
     char word[50];
+    FILE* f=fopen(dictionary,"r");
   while(fscanf(f,"%s",word)!=EOF)
   {
-    
+    unsigned int index=hash(word);
   }
 }
 
