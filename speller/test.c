@@ -5,8 +5,8 @@
 #include <string.h>
 #include "dictionary.h"
 
-const char* dictionary1="dictionaries/small";
-int counter=0;
+const char* dictionary1="dictionaries/large";
+long counter=0;
 typedef struct node
 {
     char word[LENGTH + 1];
@@ -15,7 +15,7 @@ typedef struct node
 node;
 
 
-const unsigned int N = 26;
+const unsigned int N = 676;
 
 
 node *table[N];
@@ -25,7 +25,7 @@ int main(void)
 bool flag=load(dictionary1);
 printf("%i\n",flag);
 printf("%i\n",counter);
-printf("%s\n",table[52]->word);
+
 }
 
 
