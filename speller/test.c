@@ -6,7 +6,7 @@
 #include "dictionary.h"
 
 const char* dictionary1="dictionaries/large";
-long counter=0;
+unsigned long int counter=0;
 typedef struct node
 {
     char word[LENGTH + 1];
@@ -24,7 +24,7 @@ int main(void)
 
 bool flag=load(dictionary1);
 printf("%i\n",flag);
-printf("%i\n",counter);
+printf("%ld\n",counter);
 
 }
 
@@ -40,6 +40,8 @@ bool load(const char* dictionary)
   {
      index=hash(string);
     node* n=malloc(sizeof(node));
+    if(n==NULL)
+    return false;
     strcpy(n->word,string);
     n->next=table[index];
     table[index]=n;
