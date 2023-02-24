@@ -5,7 +5,7 @@
 #include <string.h>
 #include "dictionary.h"
 
-const char* dictionary1="dictionaries/small";
+const char* dictionary1="dictionaries/large";
 unsigned long int counter=0;
 typedef struct node
 {
@@ -15,7 +15,7 @@ typedef struct node
 node;
 
 
-const unsigned int N = 100000;
+const unsigned int N =700;
 
 
 node *table[N];
@@ -55,5 +55,5 @@ bool load(const char* dictionary)
 unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
-    return (word[0]-'a')*26+word[1]-'a';
+    return 0;
 }
