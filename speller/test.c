@@ -25,6 +25,7 @@ int main(void)
 bool flag=load(dictionary1);
 printf("%i\n",flag);
 printf("%i\n",counter);
+printf("%s\n",table[52]->word);
 }
 
 
