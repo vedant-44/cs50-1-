@@ -6,7 +6,7 @@
 #define LENGTH 45
 bool load(const char *dictionary);
 unsigned int hash(const char *word);
-char* dictionary1="dictionaries/small";
+char* dictionary="dictionaries/small";
 
 
 // Represents a node in a hash table
@@ -24,7 +24,7 @@ const unsigned int N = 676;
 node *table[N];
 int main(void)
 {
-bool flag=load(dictionary1);
+bool flag=load(dictionary);
 
 
 }
