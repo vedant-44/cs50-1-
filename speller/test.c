@@ -15,7 +15,7 @@ typedef struct node
 node;
 
 
-const unsigned int N = 676;
+const unsigned int N = 100000;
 
 
 node *table[N];
