@@ -20,12 +20,16 @@ const unsigned int N = 26;
 node *table[N];
 int main(void)
 {
-
+char* dictionary="dictionaries/small";
 }
+
+
 bool load(const char* dictionary)
 {
-
+   
 }
+
+
 unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
