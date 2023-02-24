@@ -45,6 +45,7 @@ bool load(const char* dictionary)
     strcpy(n->word,string);
     n->next=table[index];
     table[index]=n;
+    free(n);
     counter++;
 
   }
