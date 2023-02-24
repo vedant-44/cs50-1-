@@ -13,10 +13,10 @@ typedef struct node
 }
 node;
 
-// TODO: Choose number of buckets in hash table
+
 const unsigned int N = 26;
 
-// Hash table
+
 node *table[N];
 int main(void)
 {
@@ -25,4 +25,9 @@ int main(void)
 bool load(const char* dictionary)
 {
 
+}
+unsigned int hash(const char *word)
+{
+    // TODO: Improve this hash function
+    return toupper(word[0]) - 'A';
 }
