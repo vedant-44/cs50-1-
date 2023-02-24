@@ -5,7 +5,7 @@
 #include <string.h>
 #include "dictionary.h"
 
-const char* dictionary1="dictionaries/large";
+const char* dictionary1="dictionaries/small";
 unsigned long int counter=0;
 typedef struct node
 {
