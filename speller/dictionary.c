@@ -26,15 +26,41 @@ node *table[N];
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
 {
-    // TODO
-    return false;
+    char* string=NULL;
+    strcpy(string,word);
+    int i=0;
+    while(string[i]!='\0')
+    {
+        string[i]=tolower(string[i]);
+        i++;
+    }
+    int index=hash(string);
+    node* ptr=table[index];
+    while(ptr!=NULL)
+    {
+        if(!strcmp(string,ptr->word))
+        return true;
+        else
+        ptr=ptr->next;
+
+    }
+       return false;
+       
 }
 
 // Hashes word to a number
 unsigned int hash(const char *word)
 {
-    // TODO: Improve this hash function
-    return toupper(word[0]) - 'A';
+    int l=strlen(word);
+
+    if(l<2)
+    return word[0]-'a';
+    //checking for apostrophe c
+    else if(word[1] !=  39)
+    return (word[0]-'a')*26 + word[1]-'a';
+
+    else
+    return (word[0]-'a')*26 + word[2]-'a';
 }
 
 // Loads dictionary into memory, returning true if successful, else false
@@ -64,8 +90,7 @@ bool load(const char *dictionary)
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
 unsigned int size(void)
 {
-    // TODO
-    return 0;
+   return counter;
 }
 
 // Unloads dictionary from memory, returning true if successful, else false
