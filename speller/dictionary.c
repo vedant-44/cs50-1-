@@ -110,7 +110,10 @@ bool unload(void)
         free(tmp);
         tmp=cursor;
     }
-    i++;
+    
   }
-   if(i!=)
+   if(i!=N)
+   return false;
+   else
+   return true;
 }
