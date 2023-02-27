@@ -38,14 +38,15 @@ bool check(const char *word)
     node* ptr=table[index];
     while(ptr!=NULL)
     {
-        if(!strcmp(string,ptr->word))
+        if(strcmp(string,ptr->word)==0)
         return true;
+        
         else
         ptr=ptr->next;
 
     }
        return false;
-       
+
 }
 
 // Hashes word to a number
