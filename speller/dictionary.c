@@ -40,8 +40,25 @@ unsigned int hash(const char *word)
 // Loads dictionary into memory, returning true if successful, else false
 bool load(const char *dictionary)
 {
-    // TODO
+    char string[50];
+    unsigned int index=0;
+    FILE* f=fopen(dictionary,"r");
+    if(f==NULL)
     return false;
+  while(fscanf(f,"%s",string)!=EOF)
+  {
+     index=hash(string);
+    node* n=malloc(sizeof(node));
+    if(n==NULL)
+    return false;
+    strcpy(n->word,string);
+    n->next=table[index];
+    table[index]=n;
+    counter++;
+
+  }
+  return true;
+
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
