@@ -58,7 +58,7 @@ unsigned int hash(const char *word)
 
     if(l<2)
     return word[0]-'a';
-    //checking for apostrophe
+    //checking for apostrophe c
     else if(word[1] !=  39)
     return (word[0]-'a')*26 + word[1]-'a';
 
