@@ -55,7 +55,13 @@ bool load(const char* dictionary)
 unsigned int hash(const char *word)
 {
     int l=strlen(word);
+
     if(l<2)
     return word[0]-'a';
-    
+    //checking for apostrophe
+    else if(word[1] !=  39)
+    return (word[0]-'a')*26 + word[1]-'a';
+
+    else
+    return (word[0]-'a')*26 + word[2]-'a';
 }
