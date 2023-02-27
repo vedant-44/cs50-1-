@@ -26,7 +26,7 @@ node *table[N];
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
 {
-    char* string=NULL;
+    char* string=malloc(50);
     strcpy(string,word);
     int i=0;
     while(string[i]!='\0')
@@ -40,7 +40,7 @@ bool check(const char *word)
     {
         if(strcmp(string,ptr->word)==0)
         return true;
-        
+
         else
         ptr=ptr->next;
 
