@@ -55,5 +55,5 @@ bool load(const char* dictionary)
 unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
-    return 0;
+    return 675;
 }
