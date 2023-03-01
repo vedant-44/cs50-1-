@@ -1,3 +1,3 @@
-x = input(x:)
-y = input(y:)
-print(f"Sum:{x+y})
+x = input("x:")
+y = input("y:")
+print(f"Sum:{x+y}")
