@@ -2,8 +2,11 @@ import sys
 if len(sys.argv)<2:
     print("No command line argument")
     sys.exit(1)
-else:
-    for i in sys.argv[1:]:
-       print(f"{i}",end='')
-    print()
-    sys.exit(0)
+names=['Anthony','Kyrie','James']
+for i in names:
+    if argv[1]==i:
+        print("Found")
+        sys.exit(0)
+print("Not Found")
+sys.exit(1)
+
