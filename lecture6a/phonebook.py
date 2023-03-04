@@ -2,7 +2,7 @@ import sys
 if len(sys.argv)<2:
     print("No command line argument")
     sys.exit(1)
-names=['Anthony','Kyrie','James']
+names=['anthony','kyrie','james']
 for i in names:
     if sys.argv[1]==i:
         print("Found")
