@@ -4,9 +4,9 @@ if len(sys.argv)<2:
     sys.exit(1)
 names=['Anthony','Kyrie','James']
 for i in names:
-    if argv[1]==i:
+    if sys.argv[1]==i:
         print("Found")
         sys.exit(0)
 print("Not Found")
-sys.exit(1)
+sys.exit(2)
 
