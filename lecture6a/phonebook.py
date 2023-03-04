@@ -1,12 +1,10 @@
-import sys
-if len(sys.argv)<2:
-    print("No command line argument")
-    sys.exit(1)
-names=['anthony','kyrie','james']
-for i in names:
-    if sys.argv[1]==i:
-        print("Found")
-        sys.exit(0)
-print("Not Found")
-sys.exit(2)
+from sys import exit
+name=input("Name:")
+name=name.capitalize()
+dictionary={'Vedant':'453432','Abhinav':'325234'}
+for i in dictionary:
+    if(i==name):
+        print(f"Number: {dictionary[name]}")
+        exit(0)
+exit(1)
 
