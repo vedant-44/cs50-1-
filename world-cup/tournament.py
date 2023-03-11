@@ -31,7 +31,7 @@ def main():
           if b in counts.keys:
               counts[b]=counts[b]+=1
           else:
-              
+              counts[b]=1
 
 
 
