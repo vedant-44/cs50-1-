@@ -1,8 +1,9 @@
 from sys import exit
-name=input("Name:")
-name=name.capitalize()
+ls=[]
 dictionary={'Vedant':'453432','Abhinav':'325234'}
-if name in dictionary:
-    print(f"Number:{dictionary[name]}")
+ls.append(dictionary)
+a=ls[0]
+b=a['Vedant']
+print(b)
 
 

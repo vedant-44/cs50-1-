@@ -19,14 +19,13 @@ def main():
     teams = []
     with open(filename) as csv_file:
      reader=csv.DictReader(csv_file)
-     for row in reader:
-        row['rating']=int(row['rating'])
-        team={row['team']:row['rating']}
+     for team in reader:
+        team['rating']=int(team['rating'])
         teams.append(team)
 
     counts = {}
 
-    print(teams[15])
+    
     # TODO: Simulate N tournaments and keep track of win counts
 
     # Print each team's chances of winning, according to simulation
