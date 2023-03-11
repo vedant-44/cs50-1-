@@ -14,7 +14,7 @@ def main():
 
 
  counts = {}
-    for i in range(1000):
+ for i in range(1000):
       a=simulate_tournament(teams)
       b=a[0]['team']
       if b in teams:
