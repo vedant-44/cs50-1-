@@ -7,9 +7,11 @@ def main():
  with open('2018m.csv') as csv_file:
      reader=csv.DictReader(csv_file)
      for row in reader:
+        row['rating']=int(row['rating'])
         team={row['team']:row['rating']}
         teams.append(team)
- print(teams[0])
+ champion=simulate_tournament(teams)
+ print(champion)
 
 
 
