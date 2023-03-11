@@ -5,5 +5,5 @@ with open('2018m.csv') as csv_file:
     for row in reader:
         team={row['team']:row['rating']}
         lsteams.append(team)
-print(lsteams[0])
+
 
