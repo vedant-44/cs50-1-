@@ -11,8 +11,8 @@ def main():
         teams.append(team)
  champion=simulate_tournament(teams)
  print(champion)
- a=champion[0]
- b=a['team']
+
+ b=champion[0]['team']
  print(b)
 
 
