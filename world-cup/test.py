@@ -22,7 +22,7 @@ def main():
               counts[b]+=1
           else:
               counts[b]=1
- print(counts['Belgium'])
+ print(counts.keys)
 
 
 
