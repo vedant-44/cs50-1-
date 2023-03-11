@@ -3,6 +3,6 @@ lsteams=[]
 with open('2018m.csv') as csv_file:
     reader=csv.DictReader(csv_file,fieldnames=['team','rating'])
     for row in reader:
-        team={'team':'rating'}
+        team={row[0]:row[1]}
         lsteams.append(team)
 print(lsteams[1])
