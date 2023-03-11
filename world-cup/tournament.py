@@ -24,9 +24,15 @@ def main():
         teams.append(team)
 
     counts = {}
-    a=simulate_tournament(teams)
-    b=a[0]['team']
-    
+    for i in range(N):
+      a=simulate_tournament(teams)
+      b=a[0]['team']
+      if b in teams:
+          if b in counts.keys:
+              counts[b]=counts[b]+=1
+          else:
+              
+
 
 
 
