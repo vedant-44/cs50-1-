@@ -29,7 +29,7 @@ def main():
       b=a[0]['team']
       if b in teams:
           if b in counts.keys:
-              counts[b]=counts[b]+=1
+              counts[b]+=1
           else:
               counts[b]=1
 
