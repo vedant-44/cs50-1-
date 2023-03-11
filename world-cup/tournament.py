@@ -24,6 +24,8 @@ def main():
         teams.append(team)
 
     counts = {}
+    a=simulate_tournament(teams)
+    b=a[0]['team']
     
 
 
