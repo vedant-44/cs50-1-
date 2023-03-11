@@ -47,5 +47,5 @@ def simulate_tournament(teams):
     winner=simulate_tournament(teams)
     return winner
 
-
+main()
 
