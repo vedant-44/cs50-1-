@@ -14,8 +14,10 @@ def main():
     if len(sys.argv) != 2:
         sys.exit("Usage: python tournament.py FILENAME")
 
+    filename=sys.argv[1]
+
     teams = []
-    with open('2018m.csv') as csv_file:
+    with open(filename) as csv_file:
      reader=csv.DictReader(csv_file)
      for row in reader:
         team={row['team']:row['rating']}
