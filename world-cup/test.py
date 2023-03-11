@@ -9,7 +9,8 @@ def main():
      for row in reader:
         team={row['team']:row['rating']}
         teams.append(team)
-champion=simulate_tournament(teams)
+ champion=simulate_tournament(teams)
+ print(champion[0])
 
 
 
