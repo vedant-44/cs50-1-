@@ -1,6 +1,8 @@
 from cs50 import get_int
-while(h<=0 or h>8):
+while(True):
   h=get_int("Height:")
+  if h>0 and h<9:
+      
 a=1
 b=h-1
 for i in range(h):
