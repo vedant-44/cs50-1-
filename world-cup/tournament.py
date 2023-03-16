@@ -8,6 +8,9 @@ import random
 N = 1000
 
 
+
+
+
 def main():
 
     # Ensure correct usage
@@ -25,10 +28,12 @@ def main():
 
     counts = {}
     for i in range(N):
-      a=simulate_tournament(teams)
-      b=a[0]['team']
-      if b in teams:
-          counts[b]+=1
+      b=simulate_tournament(teams)
+
+      if b in counts:
+        counts[b]+=1
+      else:
+        counts[b]=1
 
 
 
@@ -65,11 +70,9 @@ def simulate_round(teams):
 
 def simulate_tournament(teams):
     """Simulate a tournament. Return name of winning team."""
-    if len(teams)==1:
-        return teams
-    teams=simulate_round(teams)
-    winner=simulate_tournament(teams)
-    return winner
+    while len(teams)>1:
+        teams=simulate_round(teams)
+    return teams[0]['team']
 
 
 if __name__ == "__main__":

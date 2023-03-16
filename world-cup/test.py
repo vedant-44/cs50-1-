@@ -17,8 +17,10 @@ def main():
  for i in range(1000):
       a=simulate_tournament(teams)
       b=a[0]['team']
-      if b in teams:
-          counts[b]+=1
+      if b in counts.keys():
+        counts[b]+=1
+      else:
+        counts[b]=0
  print(counts['Belgium'])
 
 
