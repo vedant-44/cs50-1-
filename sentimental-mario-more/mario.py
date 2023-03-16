@@ -1,4 +1,5 @@
-h=5
+from cs50 import get_int
+h=get_int("Height:")
 a=1
 b=h-1
 for i in range(h):
