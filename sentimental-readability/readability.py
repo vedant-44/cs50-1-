@@ -4,7 +4,8 @@ def main():
     letters=count_letters(text)
     words=count_words(text)
     sentences=count_sentences(text)
-    index=
+    index=0.0588*(letters*100/words)-0.296*(sentences*100/words)-15.8
+    
 
 
 
