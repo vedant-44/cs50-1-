@@ -20,19 +20,19 @@ b=[51,52,53,54,55]
 
 
 if x!=0:
-    print('Invalid')
+    print('INVALID')
     sys.exit(1)
 elif (len(num)==13 or len(num)==16) and int(num[0])==4:
-    print('Visa')
+    print('VISA')
     sys.exit(0)
 elif len(num)==15 and (a==34 or a==37):
-    print('Amex')
+    print('AMEX')
     sys.exit(0)
 elif (len(num)==13 or len(num)==16) and (a in b):
-    print('Mastercard')
+    print('MASTERCARD')
     sys.exit(0)
 else:
-    print('Invalid')
+    print('INVALID')
     sys.exit(2)
 
 
