@@ -41,6 +41,6 @@ def count_sentences(text):
             count+=1
     return count
 
-
+main()
 
 
