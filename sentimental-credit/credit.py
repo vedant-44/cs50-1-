@@ -7,8 +7,23 @@ while l>=0:
     if l-1>=0:
         sum+=2*int(num[l-1])
     l=l-2
+
+
+a=int(num[0])*10+int(num[1])
+b=[51,52,53,54,55]
+
+
 if sum%10!=0:
     print('Invalid')
-else if (len(num)==13 or len(num)==16) and int num[0]==4:
+elif (len(num)==13 or len(num)==16) and int(num[0])==4:
+    print('Visa')
+elif len(num)==15 and (a==34 or a==37):
+    print('Amex')
+elif (len(num)==13 or len(num)==16) and (a in b):
+    print('Mastercard')
+else:
+    print('invalid')
+
+
 
 
