@@ -8,7 +8,7 @@ while l>=0:
     y= 2*int(num[l-1])
     if l-1>=0:
         if len(str(y))==2:
-            sum+=int(str(y)[0])+int(str(y)(1))
+            sum+=int(str(y)[0])+int(str(y)[1])
         else:
             sum+=y
     l=l-2
