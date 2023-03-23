@@ -20,6 +20,6 @@ def height():
       h=int(input("Height: "))
       if h>0:
         return h
-    except ValueError
+    except ValueError:
        print("Not an integer")
 main()
