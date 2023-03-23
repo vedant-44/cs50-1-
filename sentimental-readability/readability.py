@@ -6,7 +6,13 @@ def main():
     sentences=count_sentences(text)
     index=0.0588*(letters*100/words)-0.296*(sentences*100/words)-15.8
     grade=round(index)
-    
+    if grade>16:
+        print('Grade 16+')
+    elif grade<1:
+        print('Before Grade 1')
+    else:
+        print(f'Grade {grade}')
+
 
 
 
