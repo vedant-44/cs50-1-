@@ -1,4 +1,5 @@
 from cs50 import get_string
+import sys
 num=get_string('Number: ')
 l=len(num)-1
 sum=0
@@ -15,14 +16,19 @@ b=[51,52,53,54,55]
 
 if sum%10!=0:
     print('Invalid')
+    sys.exit(1)
 elif (len(num)==13 or len(num)==16) and int(num[0])==4:
     print('Visa')
+    sys.exit(0)
 elif len(num)==15 and (a==34 or a==37):
     print('Amex')
+    sys.exit(0)
 elif (len(num)==13 or len(num)==16) and (a in b):
     print('Mastercard')
+    sys.exit(0)
 else:
     print('invalid')
+    sys.exit(2)
 
 
 
