@@ -27,7 +27,7 @@ elif (len(num)==13 or len(num)==16) and (a in b):
     print('Mastercard')
     sys.exit(0)
 else:
-    print('invalid')
+    print('Invalid')
     sys.exit(2)
 
 
