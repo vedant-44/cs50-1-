@@ -5,6 +5,7 @@ def main():
     words=count_words(text)
     sentences=count_sentences(text)
     index=0.0588*(letters*100/words)-0.296*(sentences*100/words)-15.8
+    grade=round(index)
     
 
 
