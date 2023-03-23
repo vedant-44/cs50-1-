@@ -5,8 +5,10 @@ l=len(num)-1
 sum=0
 while l>=0:
     sum+=int(num[l])
+    
     if l-1>=0:
-        sum+=2*int(num[l-1])
+        if len(str(2*int(num[l-1])))==2:
+            sum+=
     l=l-2
 print(sum)
 x=sum%10
