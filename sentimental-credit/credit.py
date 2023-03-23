@@ -7,4 +7,6 @@ while l>=0:
     if l-1>=0:
         sum+=2*int(num[l-1])
     l=l-2
-
+if sum%10!=0:
+    print('Invalid')
+else if 
