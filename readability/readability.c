@@ -38,7 +38,7 @@ int count_letters (string text)
     {
         if(text[i]>='a' && text[i]<='z')
         letters = letters+1;
-        else if(text[i]>'A' && text[i]<'Z')
+        else if(text[i]>='A' && text[i]<='Z')
         letters = letters+1;
     }
  return letters;
