@@ -9,4 +9,6 @@ while l>=0:
     l=l-2
 if sum%10!=0:
     print('Invalid')
-else if 
+else if (len(num)==13 or len(num)==16) and int num[0]==4:
+
+
