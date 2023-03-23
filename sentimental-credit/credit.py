@@ -8,13 +8,14 @@ while l>=0:
     if l-1>=0:
         sum+=2*int(num[l-1])
     l=l-2
-
-
+print(sum)
+x=sum%10
+print(x)
 a=int(num[0])*10+int(num[1])
 b=[51,52,53,54,55]
 
 
-if sum%10!=0:
+if x!=0:
     print('Invalid')
     sys.exit(1)
 elif (len(num)==13 or len(num)==16) and int(num[0])==4:
