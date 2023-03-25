@@ -29,7 +29,12 @@ def main():
 
     # TODO: Check database for matching profiles
        for i in people:
-            
+            temp=i
+            del temp['name']
+            if temp==counts:
+                 print(i['name'])
+                 return
+       print('No match')
 
 
 
