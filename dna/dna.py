@@ -12,7 +12,11 @@ def main():
        with open(argv[1]) as csv_file:
             reader=csv.DictReader(csv_file)
             for person in reader:
+                 person['AGATC']= int(person['AGATC'])
+                 person['AATG']= int(person['AATG'])
+                 person['TATC']=int(person['TATC'])
                  
+
     # TODO: Read DNA sequence file into a variable
 
     # TODO: Find longest match of each STR in DNA sequence
