@@ -19,7 +19,8 @@ def main():
             sequence=txt_file.read()
        print(sequence)
     # TODO: Find longest match of each STR in DNA sequence
-       
+       keyslist=list(people[0].keys())
+       print(keyslist)
 
     # TODO: Check database for matching profiles
 
