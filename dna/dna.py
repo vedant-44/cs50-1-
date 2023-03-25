@@ -31,6 +31,8 @@ def main():
        for i in people:
             temp=i
             del temp['name']
+            for j in temp.keys():
+                 temp[j]=int(temp[j])
             print(temp)
             print(counts)
             if temp==counts:
