@@ -33,8 +33,8 @@ def main():
             del temp['name']
             for j in temp.keys():
                  temp[j]=int(temp[j])
-            print(temp)
             
+
             if temp==counts:
                  print(i)
 
