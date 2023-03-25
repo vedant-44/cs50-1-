@@ -9,12 +9,13 @@ def main():
             print('Usage: python dna.py data.csv sequence.txt')
     # TODO: Read database file into a variable
        people=[]
-       with open(argv[1]) as csv_file:
+       with open(sys.argv[1]) as csv_file:
             reader=csv.DictReader(csv_file)
             for person in reader:
                  people.append(person)
        print(people[1])
     # TODO: Read DNA sequence file into a variable
+       
 
     # TODO: Find longest match of each STR in DNA sequence
 
