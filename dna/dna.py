@@ -15,7 +15,7 @@ def main():
                  person['AGATC']= int(person['AGATC'])
                  person['AATG']= int(person['AATG'])
                  person['TATC']=int(person['TATC'])
-                 
+                 people.append(person)
 
     # TODO: Read DNA sequence file into a variable
 
