@@ -20,7 +20,10 @@ def main():
        print(sequence)
     # TODO: Find longest match of each STR in DNA sequence
        keyslist=list(people[0].keys())
+       keyslist.remove('name')
        print(keyslist)
+       for i in keyslist:
+            
 
     # TODO: Check database for matching profiles
 
