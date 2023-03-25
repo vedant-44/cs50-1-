@@ -28,12 +28,15 @@ def main():
        print(counts['AGATC'])
 
     # TODO: Check database for matching profiles
+       temp={}
        for i in people:
+            print(i)
+            name 
             temp=i
             del temp['name']
             for j in temp.keys():
                  temp[j]=int(temp[j])
-            
+
 
             if temp==counts:
                  print(i)
