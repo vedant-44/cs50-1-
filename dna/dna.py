@@ -24,10 +24,11 @@ def main():
        keyslist.remove('name')
        print(keyslist)
        for i in keyslist:
-            counts[i:longest_match(sequence,i)]
-
+            counts[i]=longest_match(sequence,i)
+       print(counts['AGATC'])
 
     # TODO: Check database for matching profiles
+       
 
 
 
