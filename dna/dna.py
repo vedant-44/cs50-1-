@@ -28,7 +28,8 @@ def main():
        print(counts['AGATC'])
 
     # TODO: Check database for matching profiles
-       
+       for i in people:
+            
 
 
 
