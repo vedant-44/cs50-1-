@@ -13,25 +13,25 @@ def main():
             reader=csv.DictReader(csv_file)
             for person in reader:
                  people.append(person)
-       print(people[1])
+
     # TODO: Read DNA sequence file into a variable
        with open(sys.argv[2]) as txt_file:
             sequence=txt_file.read()
-       print(sequence)
+
     # TODO: Find longest match of each STR in DNA sequence
        counts={}
        keyslist=list(people[0].keys())
        keyslist.remove('name')
-       print(keyslist)
+    
        for i in keyslist:
             counts[i]=longest_match(sequence,i)
-       print(counts['AGATC'])
+
 
     # TODO: Check database for matching profiles
        temp={}
        for i in people:
-            print(i)
-            name 
+
+            name=i['name']
             temp=i
             del temp['name']
             for j in temp.keys():
@@ -39,7 +39,7 @@ def main():
 
 
             if temp==counts:
-                 print(i)
+                 print(name)
 
                  return
        print('No match')
