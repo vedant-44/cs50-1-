@@ -8,13 +8,15 @@ def main():
        if len(sys.argv) !=3:
             print('Usage: python dna.py data.csv sequence.txt')
     # TODO: Read database file into a variable
-
+       people=[]
+       with open(argv[1]) as csv_file:
+            
     # TODO: Read DNA sequence file into a variable
 
     # TODO: Find longest match of each STR in DNA sequence
 
     # TODO: Check database for matching profiles
-      
+
 
 
 def longest_match(sequence, subsequence):
