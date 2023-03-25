@@ -24,7 +24,7 @@ def main():
        keyslist.remove('name')
        print(keyslist)
        for i in keyslist:
-            
+            counts[i:longest_match(sequence,i)]
 
 
     # TODO: Check database for matching profiles
