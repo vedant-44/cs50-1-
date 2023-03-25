@@ -34,9 +34,10 @@ def main():
             for j in temp.keys():
                  temp[j]=int(temp[j])
             print(temp)
-            print(counts)
+            
             if temp==counts:
-                 print(i['name'])
+                 print(i)
+
                  return
        print('No match')
 
