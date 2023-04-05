@@ -3,7 +3,7 @@ with open('favourites.csv') as file:
     reader=csv.DictReader(file)
     counts={}
     for row in reader:
-        favourite=row['language']
+        favourite=row['pset']
         if favourite in counts:
             counts[favourite]+=1
         else:
