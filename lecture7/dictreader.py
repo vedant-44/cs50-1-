@@ -8,7 +8,7 @@ with open('favourites.csv') as file:
             counts[favourite]+=1
         else:
             counts[favourite]=1
-    
+
 
 
 
