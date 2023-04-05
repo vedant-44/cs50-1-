@@ -9,7 +9,7 @@ with open('favourites.csv') as file:
         else:
             counts[favourite]=1
 for favourite in counts:
-    print(f"{favourite}: {counts[favourite]})
+    print(f"{favourite}: {counts[favourite]}")
 
 
 
