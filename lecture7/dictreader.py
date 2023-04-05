@@ -8,7 +8,7 @@ with open('favourites.csv') as file:
             counts[favourite]+=1
         else:
             counts[favourite]=1
-for favourite in sorted(counts,key=lambda favourite: counts[favourite]):
+for favourite in sorted(counts,key=lambda a: counts[a],reverse=True):
     print(f"{favourite}: {counts[favourite]}")
 
 
