@@ -4,6 +4,11 @@ with open('favourites.csv') as file:
     counts={}
     for row in reader:
         favourite=row['language']
-        
+        if favourite in counts:
+            counts[favourite]+=1
+        else:
+            counts[favourite]=1
+    
+
 
 
