@@ -7,3 +7,5 @@ SELECT * FROM interviews WHERE day=28 AND month=7;
 SELECT * FROM bakery_security_logs WHERE month=7 AND day=28 AND hour=10 AND minute<25 AND minute>15;
 --Checking atm transactions.
  SELECT * FROM atm_transactions WHERE month=7 AND day=28 AND atm_location='Leggett Street' AND transaction_type='withdraw';
+--Getting details related to bank accounts.
+ SELECT * FROM bank_accounts WHERE account_number IN(SELECT account_number FROM atm_transactions WHERE month=7 AND day=28 AND atm_location='Leggett Street' AND transaction_type='withdraw');
