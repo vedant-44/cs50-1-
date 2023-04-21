@@ -17,3 +17,5 @@ SELECT * FROM bakery_security_logs WHERE month=7 AND day=28 AND hour=10 AND minu
   SELECT * FROM phone_calls WHERE caller IN( SELECT phone_number FROM people WHERE passport_number=5773159633 OR passport_number=8496433585) AND duration<60 AND day=28;
   --Finding Accomplice.
   SELECT * FROM people WHERE phone_number=(SELECT receiver FROM phone_calls WHERE caller IN( SELECT phone_number FROM people WHERE passport_number=5773159633 OR passport_number=8496433585) AND duration<60 AND day=28);
+  --Finding city
+  SELECT * FROM airports WHERE id=4;
