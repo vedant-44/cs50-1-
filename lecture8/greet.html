@@ -5,7 +5,7 @@
             function greet()
             {
               let name=document.queryselector('#name').value;
-              alert('hello,' + name);
+              alert('hello,' +name);
             }
         </script>
         <title>
@@ -14,7 +14,7 @@
 
     </head>
     <body>
-        <form onsubmit="greet()">
+        <form onsubmit="greet();return false;" >
             <input type="text" autocomplete="off" autofocus placeholder="name" id="name">
             <input type="submit" value="GREET">
         </form>
