@@ -2,7 +2,11 @@
 <html lang="en">
     <head>
         <script>
-           document.querySelector
+           document.querySelector('form').addEventListener('submit',function(){
+            let name=document.queryselector('#name').value;
+            alert('Hello,'+name);
+            event.preventDefault();
+           })
         </script>
         <title>
             greet
