@@ -2,11 +2,15 @@
 <html lang="en">
     <head>
         <script>
-           document.querySelector('form').addEventListener('submit',function(){
-            let name=document.queryselector('#name').value;
-            alert('Hello,'+name);
-            event.preventDefault();
-           })
+            document.addEventListener('DOMContentLoaded',function(){
+
+
+                    document.querySelector('form').addEventListener('submit',function(){
+                        let name=document.queryselector('#name').value;
+                        alert('Hello,'+name);
+                        event.preventDefault();
+                    });
+                });
         </script>
         <title>
             greet
