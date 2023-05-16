@@ -13,7 +13,7 @@
     document.querySelector('#div1').addEventListener('click', function(event) {
       let res = event.target;
       let p=document.querySelector('#p1');
-      if (res === document.querySelector('#div1 .button')) {
+      if (res.closest('#div1 button')) {
           p.innerHTML='Correct Response';
 
       }
