@@ -5,7 +5,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
         <title>Trivia!</title>
-    
+        <style>
+            #div1 {
+            pointer-events: none;
+          }
+        </style>
+
 
             <script>
   document.addEventListener('DOMContentLoaded', function() {
@@ -27,18 +32,18 @@
         </div>
 
         <div class="container">
-            <div class="section">
+            <div class="section" id="div1">
                 <h2>Part 1: Multiple Choice </h2>
                 <hr>
                 <h3>
                     Which player among the options has the highest points per game?
                 </h3>
-                <div id="div1">
+                     <br><br>
                     <button type="button">Lebron james</button>
                     <button type="button">Kevin Durant</button>
                     <button type="button">Kobe Bryant</button>
                     <button type="button">Luka Doncic</button>
-                </div>
+
                 <p id="p1">
 
                 </p>
