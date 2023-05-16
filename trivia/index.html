@@ -6,17 +6,17 @@
         <link href="styles.css" rel="stylesheet">
         <title>Trivia!</title>
         <script>
-            document.addEventListener('DOMContentLoaded',function(){
-             document.querySelector('#div1').addEventListener('click',function(event){
-                 let res=event.target;
-                if(res===document.querySelector('#div1.button:forst-child'))
-                {
-                    console.log('Correct Response!!');
-                }
-
-
-             })
-            })
+            <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('#div1').addEventListener('click', function(event) {
+      let res = event.target;
+      if (res === document.querySelector('#div1 .button:first-child')) {
+        console.log('Correct Response!!');
+        // Add your desired functionality for the first button in div1
+      }
+    });
+  });
+</script>
         </script>
     </head>
     <body>
