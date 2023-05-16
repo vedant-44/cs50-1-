@@ -5,14 +5,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
         <title>Trivia!</title>
-        
+
             <script>
   document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('#div1').addEventListener('click', function(event) {
       let res = event.target;
+      let p=document.querySelector('#p1');
       if (res === document.querySelector('#div1 .button:first-child')) {
-        console.log('Correct Response!!');
-        // Add your desired functionality for the first button in div1
+          p.innerHTML='Correct Response';
+
       }
     });
   });
@@ -37,6 +38,9 @@
                     <button type="button">Kobe Bryant</button>
                     <button type="button">Luka Doncic</button>
                 </div>
+                <p id="p1">
+
+                </p>
 
             </div>
 
