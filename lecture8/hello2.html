@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+            document.addEventListener('DOMContentLoaded',function(){
+                document.querySelector('input').addEventListener('keyup',function(event){
+                    let name=document.querySelector('#name').value;
+                    let name2=document.querySelector('p');
+                    if(name)
+                    {
+                        name2.innerHTML=`Hello,${name}`;
+                    }
+                    else
+                    name2.innerHTML='Hello, whoever you are';
+                })
+
+            })
+        </script>
+
+        <title>
+               GREET!
+        </title>
+
+    <head>
+    <body>
+        <form>
+            <input type="text" autocorrect="off" autofocus placeholder="name" id="name">
+        </form>
+        <p>
+        </p>
+    </body>
+
+
+</html>
+
