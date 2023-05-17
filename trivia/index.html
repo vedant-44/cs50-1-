@@ -10,11 +10,10 @@
 
             <script>
                   document.addEventListener('DOMContentLoaded',function(){
-                    let correct=document.querySelector('.correct');
-                    correct.addEventListener('click',function(event){
-                        let p=document.querySelector('#p1');
-                        p.innerHTML='Correct!';
-                        correct.style.backgroundColor='green';
+                    let correct=document.querySelectorAll('.correct');
+                        correct.forEach(function(option){
+                            
+                        })
                     })
                     let incorrect=document.querySelectorAll('.incorrect');
                     incorrect.forEach(function(option){
