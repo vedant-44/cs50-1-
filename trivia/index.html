@@ -16,7 +16,7 @@
                         p.innerHTML='Correct!';
                     })
                     let incorrect=document.querySelectorAll('.incorrect');
-                    incorrect.foreach(function(option){
+                    incorrect.forEach(function(option){
                          option.addEventListener('click',function(event){
                             let p =document.querySelector('#p1');
                             p.innerHTML='Incorrect';
