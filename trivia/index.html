@@ -14,12 +14,14 @@
                     correct.addEventListener('click',function(event){
                         let p=document.querySelector('#p1');
                         p.innerHTML='Correct!';
+                        correct.style.backgroundColor='green';
                     })
                     let incorrect=document.querySelectorAll('.incorrect');
                     incorrect.forEach(function(option){
                          option.addEventListener('click',function(event){
                             let p =document.querySelector('#p1');
                             p.innerHTML='Incorrect';
+                            option.style.backgroundColor='red';
                          })
                     })
 
