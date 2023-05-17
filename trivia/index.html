@@ -10,7 +10,11 @@
 
             <script>
                   document.addEventListener('DOMContentLoaded',function(){
-                    
+                    let correct=document.querySelector('.correct');
+                    correct.addEventListener('click',function(event){
+                        let p=document.querySelector('#p1');
+                        p.innerHTML='Correct!';
+                    })
                   })
 
             </script>
