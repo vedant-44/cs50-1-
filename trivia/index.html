@@ -9,20 +9,7 @@
 
 
             <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('#div1').addEventListener('click', function(event) {
-      let res = event.target;
-      let p=document.querySelector('#p1');
-      if (res.closest('#div1 button')) {
-          p.innerHTML='Correct Response';
 
-      }
-      else
-      {
-        p.innerHTML='Incorrect Response';
-      }
-    });
-  });
 </script>
 
     </head>
@@ -39,7 +26,7 @@
                     Which player among the options has the highest points per game?
                 </h3>
                      <br>
-                    <button type="button">Lebron james</button>
+                    <button type="button" class="incorrect">Lebron james</button>
                     <button type="button">Kevin Durant</button>
                     <button type="button">Kobe Bryant</button>
                     <button type="button">Luka Doncic</button>
