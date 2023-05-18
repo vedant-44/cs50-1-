@@ -10,18 +10,13 @@
 
             <script>
                   document.addEventListener('DOMContentLoaded',function(){
-                    let correct=document.querySelectorAll('.correct');
-                        
-
-                        })
-                    })
-                    let incorrect=document.querySelectorAll('.incorrect');
-                    incorrect.forEach(function(option){
-                         option.addEventListener('click',function(event){
-                            let p =document.querySelector('#p1');
-                            p.innerHTML='Incorrect';
-                            option.style.backgroundColor='red';
-                         })
+                    let correctoptions=document.querySelectorAll('.correct');
+                    correctoptions.forEach(function(correctoption,index){
+                             correctoption.addEventListener('click',function(event){
+                                let paragraph=document.querySelectorAll('.paragraph');
+                                paragraph[index].innerHTML='Correct!';
+                                correctoption.style.backgroundColor='green';
+                             })
                     })
 
                   })
@@ -47,7 +42,7 @@
                     <button type="button" class="incorrect">Tywin Lannister</button>
                     <button type="button" class="incorrect">Littlefinger</button>
 
-                <p id="p1"></p><br>
+                <p class="paragraph"></p><br>
 
                 <h3>
                     What is the Valyrian steel sword of House Stark called in "Game of Thrones"?
@@ -57,7 +52,7 @@
                 <button type="button" class="incorrect">Ice</button>
                 <button type="button" class="incorrect">Oathkeeper</button>
                 <button type="button" class="incorrect">Widow's Wail</button>
-
+                 <p class="paragraph"></p>
 
 
             </div>
