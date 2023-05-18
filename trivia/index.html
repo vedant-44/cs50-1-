@@ -21,8 +21,9 @@
                     let incorrectoptions=document.querySelectorAll('.incorrect');
                     incorrectoptions.forEach(function(incorrectoption,index){
                         incorrectoption.addEventListener('click',function(event){
-                            let paragraph=document.querySelectorAll('.paragraph');
-                            paragraph[index].innerHTML='Incorrect';
+                            let paragraph=this.nextElementSibling;
+                            paragraph.innerHTML='Incorrect';
+                            incorrectoption.style.backgroundColor='red';
                         })
                     })
 
