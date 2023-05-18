@@ -13,15 +13,15 @@
                     let correctoptions=document.querySelectorAll('.correct');
                     correctoptions.forEach(function(correctoption,index){
                              correctoption.addEventListener('click',function(event){
-                                let paragraph=document.querySelectorAll('.paragraph');
-                                paragraph[index].innerHTML='Correct!';
+                                let paragraph=this.parentNode.querySelector('.paragraph');
+                                paragraph.innerHTML='Correct!';
                                 correctoption.style.backgroundColor='green';
                              })
                     })
                     let incorrectoptions=document.querySelectorAll('.incorrect');
                     incorrectoptions.forEach(function(incorrectoption,index){
                         incorrectoption.addEventListener('click',function(event){
-                            let paragraph=this.nextElementSibling;
+                            let paragraph=this.parentNode.querySelector('.paragraph');
                             paragraph.innerHTML='Incorrect';
                             incorrectoption.style.backgroundColor='red';
                         })
@@ -67,9 +67,10 @@
                  <div class="question">
                     <h3>Which character famously stated, "Chaos isn't a pit. Chaos is a ladder" in "Game of Thrones"?</h3>
                     <button type="button" class="incorrect">Tyrion Lannister</button>
-                    <button type="button" class="incorrect"> Petyr Baelish (Littlefinger)</button>
+                    <button type="button" class="correct"> Petyr Baelish (Littlefinger)</button>
                     <button type="button" class="incorrect">Cersei Lannister</button>
-                    <button type="button" class="incorrect"></button>
+                    <button type="button" class="incorrect">Varys</button>
+                    <p class="paragraph"></p>
 
 
                  </div>
