@@ -22,7 +22,7 @@
                     incorrectoptions.forEach(function(incorrectoption,index){
                         incorrectoption.addEventListener('click',function(event){
                             let paragraph=document.querySelectorAll('.paragraph');
-                            paragraph
+                            paragraph[index].innerHTML='Incorrect';
                         })
                     })
 
