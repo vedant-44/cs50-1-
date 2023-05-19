@@ -1,7 +1,7 @@
 #include <stdio.h>
-
+#include<cs50.h>
 int main(void) {
-    int a = 123;
+    a=get_long("Number:");
     int arr[200];
     int j = 0;
 
@@ -11,9 +11,7 @@ int main(void) {
         j++;
     }
 
-    for (int i = j - 1; i >= 0; i--) {
-        printf("%d\n", arr[i]);
-    }
-
     
+
+
 }
