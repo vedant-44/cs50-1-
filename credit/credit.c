@@ -40,6 +40,6 @@ else if(arr[j-1]==4)
 }
 else if(arr[j-1]*10+arr[j-2]==51 || arr[j-1]*10+arr[j-2]==52 ||arr[j-1]*10+arr[j-2]==53 || arr[j-1]*10+arr[j-2]==54 ||  arr[j-1]*10+arr[j-2]==55)
 {
-    prinf("MASTERCARD\n");
+    printf("MASTERCARD\n");
 }
 }
