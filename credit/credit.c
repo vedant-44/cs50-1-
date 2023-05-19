@@ -13,7 +13,7 @@ int main(void)
     i++;
 
  }
- for(int i=0;i<5;i++)
+ for(int i=0;i<3;i++)
  {
     printf("%i\n",arr[i]);
  }
