@@ -26,6 +26,9 @@ int main(void) {
  {
     sum=sum+arr[i];
  }
-printf("%i\n",sum);
+if(sum%10 != 0)
+{
+    printf("Invalid\n");
+}
 
 }
