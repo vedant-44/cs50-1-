@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include<cs50.h>
 int main(void) {
-    a=get_long("Number:");
+   long a=get_long("Number:");
     int arr[200];
     int j = 0;
     int sum=0;
@@ -11,11 +11,21 @@ int main(void) {
         a = a / 10;
         j++;
     }
-  for(int i=j-1;i>=0;i--)
+  for(int i=1;i<j-1;i=i+2)
   {
-    
+      if(arr[i]/10<0)
+      {
+        sum=sum+arr[i];
+      }
+      else
+      {
+        sum=sum+arr[i]%10+arr[i]/10;
+      }
   }
-
-
+ for(int i=0;i<j;i=i+2)
+ {
+    sum=sum+arr[1];
+ }
+printf("%i\n",sum);
 
 }
