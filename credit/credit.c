@@ -3,7 +3,7 @@
 
 int main(void)
 {
- int a=12345;
+ int a=123;
  int arr[200];
  while(a>1)
  {
