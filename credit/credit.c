@@ -5,16 +5,16 @@ int main(void)
 {
  int a=123;
  int arr[200];
- int i=0;
+ int j=0;
  while(a>1)
  {
-    arr[i]=a%10;
+    arr[j]=a%10;
     a=a/10;
-    i++;
+    j++;
 
  }
  for(int i=0;i<3;i++)
  {
-    printf("%i\n",arr[i]);
+    printf("%i\n",arr[j]);
  }
 }
