@@ -28,7 +28,7 @@ int main(void) {
  }
 if(sum%10 != 0)
 {
-    printf("Invalid\n");
+    printf("INVALID\n");
 }
 if(arr[j-1]*10+arr[j-2]==34 || arr[j-1]*10+arr[j-2]==37)
 {
