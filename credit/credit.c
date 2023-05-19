@@ -24,7 +24,7 @@ int main(void) {
   }
  for(int i=0;i<j;i=i+2)
  {
-    sum=sum+arr[1];
+    sum=sum+arr[i];
  }
 printf("%i\n",sum);
 
