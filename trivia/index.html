@@ -27,11 +27,11 @@
                         })
                     })
                       let c1=document.querySelector('#c1');
-                      let a1=document.querySelector('#a1').value;
+                      let a1=document.querySelector('#a1').value.toLowerCase();
                       c1.addEventListener('click',function(){
-                        a1=a1.toLowerCase();
+
                         let p1=document.querySelector('#p1');
-                        if(a1=='kingslayer')
+                        if(a1==='kingslayer')
                         {
                            p1.innerHTML='Correct!';
                            c1.style.backgroundColor='green';
