@@ -1,45 +1,4 @@
 <style>
-
-#video-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
-}
-
-#video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-</style>
-</head>
-<body>
-<div id="video-container">
-<video id="video" autoplay muted loop>
-   <source src="cs50intro.mp4" type="video/mp4">
-</video>
-</div>
-</body>
-</html>
-In this code, the CSS block within the <style> tag sets the #video-container to position fixed, covering the full width and height of the viewport. The z-index property is set to -1 to ensure that other content can be displayed on top of it. The #video element inside the container is set to cover the entire container using width: 100% and height: 100%, with object-fit: cover to maintain the video's aspect ratio.
-
-With these CSS styles, the video will be displayed as a full-screen background video. You can further customize the styling and layout to fit your requirements.
-
-
-
-
-
-User
-still some part of left and right edge which is dark anf not showing video
-ChatGPT
-If there are dark areas on the left and right edges of the video, it might be due to the aspect ratio of the video not matching the aspect ratio of the viewport. In such cases, you can try different approaches to adjust the video size and ensure it covers the entire screen.
-
-One approach is to use CSS to center the video within the video container and apply the object-fit: cover property to make the video fill the container without distorting the aspect ratio. This will ensure the entire video is visible without any dark areas.
-<style>
 body, html {
     margin: 0;
     padding: 0;
@@ -63,5 +22,5 @@ body, html {
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
-
+}
 </style>
