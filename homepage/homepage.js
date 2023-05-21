@@ -5,10 +5,12 @@ document.addEventListener('DOMContentLoaded',function(){
         if(video.paused)
         {
             video.play();
+            playbutton.textContent='Pause';
         }
         else
         {
             video.pause();
+            playbutton.textContent='Play';
         }
     })
 })
