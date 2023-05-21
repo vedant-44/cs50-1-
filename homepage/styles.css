@@ -54,4 +54,5 @@ html {
 
 #nav .nav-link:hover {
     text-decoration: underline;
+    text-decoration-color: yellow;
 }
