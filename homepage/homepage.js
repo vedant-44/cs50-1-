@@ -1,6 +1,14 @@
 document.addEventListener('DOMContentLoaded',function(){
-    let palybutton=document.getElementById('play');
+    let playbutton=document.getElementById('play');
+    let video=document.getElementById('video');
     playbutton.addEventListener('click',function(){
-        if()
+        if(video.paused)
+        {
+            video.play();
+        }
+        else
+        {
+            video.pause();
+        }
     })
 })
