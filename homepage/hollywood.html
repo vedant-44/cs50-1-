@@ -11,6 +11,23 @@
   <style>
     body {
       background-color: black;
+      color: white;
+    }
+
+    .movie-container {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      border-bottom: 1px solid white;
+    }
+
+    .movie-image {
+      flex: 0 0 200px;
+      margin-right: 20px;
+    }
+
+    .movie-summary {
+      flex: 1;
     }
   </style>
 </head>
@@ -31,13 +48,22 @@
       </li>
     </ul>
   </div>
-   <div class="hollywoodmovies">
-    <div id="godfather">
-      
+
+  <div class="overlay">
+    <h1>Hollywood Movies</h1>
+    <p>Discover the latest blockbuster movies from Hollywood. Experience the excitement and thrill of top-notch cinema.</p>
+
+    <div class="movie-container">
+      <img class="movie-image" src="movie1.jpg" alt="Movie 1">
+      <div class="movie-summary">
+        <h3>Movie 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non turpis non nisi volutpat cursus in ac nunc.</p>
+        <button type="button" class="btn btn-outline-secondary">Watch Now</button>
+      </div>
     </div>
 
-   </div>
-
-
-</body>
-</html>
+    <div class="movie-container">
+      <img class="movie-image" src="movie2.jpg" alt="Movie 2">
+      <div class="movie-summary">
+        <h3>Movie 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non turpis non nisi volutpat cursus in ac nunc.</p>
