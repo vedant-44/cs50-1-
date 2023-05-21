@@ -1,5 +1,5 @@
-<style>
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -21,33 +21,37 @@ body, html {
     min-width: 100%;
     min-height: 100%;
 }
+
 .overlay {
     position: absolute;
     top: 42%;
     left: 42%;
     transform: translate(-50%, -50%);
-
     color: white;
     font-size: 24px;
     font-weight: bold;
     width: 80%;
 }
-#video-container {
-    position: relative;
-  }
 
-  #video {
-    width: 100%;
-    height: auto;
-  }
-  
-
-  #nav {
+#nav {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
-  }
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust the background color as needed */
+}
 
-</style>
+#nav .nav-item {
+    margin-right: 20px;
+}
+
+#nav .nav-link {
+    color: white;
+    font-size: 18px; /* Adjust the font size as needed */
+    text-decoration: none;
+}
+
+#nav .nav-link:hover {
+    text-decoration: underline;
+}
