@@ -63,7 +63,35 @@ body, html {
 .hide{
     display: none;
 }
-
+#navbar{
+    margin-top: 25px;
+}
+#navbar .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    padding: 15px;
+}
+#navbar ul li a{
+    color: #ffffff;
+}
+#navbar ul li a:hover{
+    border-bottom: solid 2px darkorange;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+.logo img{
+    width: 30px;
+    padding-left: 5px;
+}
 
 
 
