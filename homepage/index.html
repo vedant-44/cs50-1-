@@ -11,22 +11,20 @@
         <title>Bestfreemovies</title>
     </head>
     <body>
-        <div id="nav">
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled">Disabled</a>
-                </li>
-              </ul>
-        </div>
+        <nav id="navbar">
+            <div class="container">
+                <div class="logo">
+                    <span>CS50 Fanpage</span>
+                    <img src="/media/ddb.png" alt="cs50 logo">
+                </div>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="qna.html">Q&A</a></li>
+                    <li><a href="resources.html">RESOURCES <span class="hide">& TIPS</span></a></li>
+                    <li><a href="fun.html">IGNORE</a></li>
+                </ul>
+            </div>
+        </nav>
         <div id="video-container">
             <video id="video" autoplay muted loop>
                <source src="cs50intro(2).mp4" type="video/mp4">
