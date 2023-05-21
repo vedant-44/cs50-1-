@@ -32,4 +32,20 @@ body, html {
     font-weight: bold;
     width: 80%;
 }
+#video-container {
+    position: relative;
+  }
+
+  #video {
+    width: 100%;
+    height: auto;
+  }
+
+  #nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
 </style>
