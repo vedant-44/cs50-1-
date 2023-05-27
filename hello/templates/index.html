@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>
-            Greet!!
-        </title>
-    </head>
-    <body>
-        <form action="/greet" method="get">
-        <input type="text" autocomplete="off" autofocus name="name" placeholder="Name">
-        <button type="submit">Greet</button>
-        </form>
-     </body>
-</html>
+{% extends "layout.html" %}
+{% block body%}
+<form action="/greet" method="post">
+    <input type="text" autocomplete="off" autofocus name="name" placeholder="Name">
+    <button type="submit">Greet</button>
+    </form>
+{%endblock%}
