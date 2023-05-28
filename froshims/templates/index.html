@@ -3,10 +3,11 @@
 <form action="/msg" method="post">
     <input type="text" autofocus autocomplete="off" name="name" required>
     <select name="sport">
-        <option selected disabled value="none">Sport</option>
-        <option value="basketball">Basketball</option>
-        <option value="cricket">Cricket</option>
-        <option value="badminton">Badminton</option>
+        <option selected disabled>sport</option>
+        {% for sport in sports %}
+
+        <option value="{{sport}}">{{sport}}</option>
+        {% endfor %}
     </select>
     <button type="submit">Register</button>
 </form>
