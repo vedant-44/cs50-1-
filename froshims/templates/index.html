@@ -1,9 +1,10 @@
 {% extends "layout.html" %}
 {% block body%}
-<form action="/msg">
+<form action="/msg" method="post">
     <input type="text" autofocus autocomplete name="name">
     <select>
-        <option
+        <option selected disabled>Sport</option>
+        <option 
     </select>
 </form>
 {%endblock%}
