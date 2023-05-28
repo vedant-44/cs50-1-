@@ -7,4 +7,4 @@ def index():
     return render_template('index.html')
 @app.route("/msg")
 def msg():
-    return (You are registered.)
+    return render_template('msg.html')

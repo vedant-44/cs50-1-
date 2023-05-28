@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% block body%}
 <form action="/msg" method="post">
-    <input type="text" autofocus autocomplete="off" name="name">
+    <input type="text" autofocus autocomplete="off" name="name" required>
     <select name="sport">
         <option selected disabled>Sport</option>
         <option value="basketball">Basketball</option>
