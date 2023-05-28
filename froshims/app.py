@@ -10,8 +10,10 @@ def index():
 def msg():
     name=request.form.get("name")
     sport=request.form.get("sport")
+    if(name=='None' or sport=='None'):
+        return render_template('msg1.html')
     PARTICIPANTS[name]=sport
-    
+
     return render_template('msg.html')
 @app.route("/participants")
 def participants():
