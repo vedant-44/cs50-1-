@@ -5,6 +5,6 @@ app=Flask(__name__)
 @app.route("/")
 def index():
     return render_template('index.html')
-@app.route("/msg")
+@app.route("/msg",methods=['POST'])
 def msg():
     return render_template('msg.html')
