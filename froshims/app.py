@@ -10,7 +10,7 @@ def index():
 def msg():
     name=request.form.get("name")
     sport=request.form.get("sport")
-    if(name=='None' or sport=='None'):
+    if(name=='None' or sport=='none'):
         return render_template('msg1.html')
     PARTICIPANTS[name]=sport
 
