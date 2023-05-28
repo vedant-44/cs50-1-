@@ -15,7 +15,7 @@ def msg():
     return render_template('msg.html')
 @app.route("/participants")
 def participants():
-    return render_template('participants.html')
+    return render_template('participants.html',participants=PARTICIPANTS)
 
 
 
