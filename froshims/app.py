@@ -11,7 +11,7 @@ def msg():
     name=request.form.get("name")
     sport=request.form.get("sport")
     PARTICIPANTS[name]=sport
-
+    
     return render_template('msg.html')
 @app.route("/participants")
 def participants():
