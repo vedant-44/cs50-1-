@@ -8,3 +8,7 @@ def index():
 @app.route("/msg",methods=['POST'])
 def msg():
     return render_template('msg.html')
+@app.route("/participants")
+def participants():
+    PARTICIPANTS={}
+    
