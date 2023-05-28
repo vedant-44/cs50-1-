@@ -2,9 +2,12 @@
 {% block body%}
 <form action="/msg" method="post">
     <input type="text" autofocus autocomplete name="name">
-    <select>
+    <select name="sport">
         <option selected disabled>Sport</option>
-        <option 
+        <option value="basketball">Basketball</option>
+        <option value="cricket">Cricket</option>
+        <option value="badminton">Badminton</option>
     </select>
+    <button type="submit">Register</button>
 </form>
 {%endblock%}
