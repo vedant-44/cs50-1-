@@ -1,6 +1,13 @@
 {% extends "layout.html" %}
 {% block body%}
-{% for name in {{participants}} %}
-<ul
+<ul>
+{% for name in participants %}
+
+<li>
+    {{name}}
+
+</li>
+
 {% endfor %}
+</ul>
 {%endblock%}
