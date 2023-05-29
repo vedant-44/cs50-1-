@@ -13,7 +13,7 @@ def msg():
     if not name:
         return redirect('msg1.html')
     if sport not in SPORTS:
-        return render_template('msg1.html')
+        return redirect('msg1.html')
     PARTICIPANTS[name]=sport
 
 
