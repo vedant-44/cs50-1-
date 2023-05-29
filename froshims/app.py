@@ -11,7 +11,7 @@ def msg():
     name=request.form.get("name")
     sport=request.form.get("sport")
     if not name:
-        return render_template('msg1.html')
+        return redirect('msg1.html')
     if sport not in SPORTS:
         return render_template('msg1.html')
     PARTICIPANTS[name]=sport
