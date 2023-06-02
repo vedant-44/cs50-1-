@@ -13,6 +13,5 @@ def index():
         return redirect("/login")
     return render_template("index.html")
 
-@app.route("/login"):
+@app.route("/login",methods=["POST","GET"]):
 def login():
-    
