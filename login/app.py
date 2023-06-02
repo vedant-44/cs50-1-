@@ -1,4 +1,4 @@
-from flask import Flask,render_template,session,request
+from flask import Flask,render_template,session,request,redirect
 from flask_session import Session
 
 app=Flask(__name__)
@@ -9,13 +9,15 @@ Session(app)
 
 @app.route("/")
 def index():
-    if not Session.get("name"):
+    if not session.get("name"):
         return redirect("/login")
     return render_template("index.html")
 
-@app.route("/login",methods=["POST","GET"]):
+@app.route("/login",methods=["POST","GET"])
 def login():
-    if request.method == 'GET':
-        return render_template('login.html')
-    
+    if request.method == 'POST':
+        session["name"]=request.form.get("name")
+        return redirect('/')
+    return render_template('login.html')
+
 
