@@ -114,7 +114,7 @@ def register():
         password1=request.form.get('password1')
         password2=request.form.get('password2')
         if not username1 or not password1 or not password2:
-            return apology(")
+            return apology("All fiels required")
 
 
 
