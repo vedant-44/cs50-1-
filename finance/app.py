@@ -114,13 +114,18 @@ def register():
         username1=request.form.get('username1')
         password1=request.form.get('password1')
         password2=request.form.get('password2')
+        #Check various errors
         if not username1 or not password1 or not password2:
             return apology("All fiels required")
         elif password1!=password2:
             return apology("Password doesn't match")
         elif len(sameusername)!=0:
             return apology("Username is not available")
-        
+
+        #Insert new user in the database
+        db.execute("INSERT INTO user
+
+
 
 
 
