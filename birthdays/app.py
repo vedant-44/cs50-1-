@@ -29,7 +29,10 @@ def index():
        name=request.form.get('name')
        month=request.form.get('month')
        day=request.form.get('day')
-        
+       if not name or not month or not day:
+         return redirect('/')
+       else:
+        db.execute("INSERT)
 
         return redirect("/")
 
