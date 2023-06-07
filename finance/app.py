@@ -119,8 +119,8 @@ def register():
         elif password1!=password2:
             return apology("Password doesn't match")
         elif len(sameusername)!=0:
-            return apology("Username taken")
-        
+            return apology("Username is not available")
+
 
 
 
