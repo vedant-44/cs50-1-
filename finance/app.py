@@ -123,7 +123,8 @@ def register():
             return apology("Username is not available")
 
         #Insert new user in the database
-        db.execute("INSERT INTO user
+        
+        db.execute("INSERT INTO users(username,hash) VALUES(?,?)",username1,hashpassword)
 
 
 
