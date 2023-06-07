@@ -127,7 +127,8 @@ def register():
         db.execute("INSERT INTO users(username,hash) VALUES(?,?)",username1,hash_password)
 
         #log in user
-        
+         
+         session["user_id"] = rows[0]["id"]
 
 
 
