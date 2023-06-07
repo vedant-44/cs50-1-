@@ -123,8 +123,11 @@ def register():
             return apology("Username is not available")
 
         #Insert new user in the database
+        hash_password = generate_password_hash(password1, method='pbkdf2:sha256', salt_length=8)
+        db.execute("INSERT INTO users(username,hash) VALUES(?,?)",username1,hash_password)
+
+        #log in user
         
-        db.execute("INSERT INTO users(username,hash) VALUES(?,?)",username1,hashpassword)
 
 
 
