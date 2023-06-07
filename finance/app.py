@@ -109,12 +109,16 @@ def quote():
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    usernames=db.execute("SELECT * FROM users WHERE )
     if request.method=="POST":
         username1=request.form.get('username1')
         password1=request.form.get('password1')
         password2=request.form.get('password2')
         if not username1 or not password1 or not password2:
             return apology("All fiels required")
+        elif password1!=password2:
+            return apology("Password doesn't match")
+
 
 
 
