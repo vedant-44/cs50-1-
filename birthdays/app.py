@@ -32,7 +32,7 @@ def index():
        if not name or not month or not day:
          return redirect('/')
        else:
-        db.execute("INSERT)
+        db.execute("INSERT INTO )
 
         return redirect("/")
 
