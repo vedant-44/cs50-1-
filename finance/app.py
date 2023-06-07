@@ -127,9 +127,9 @@ def register():
         db.execute("INSERT INTO users(username,hash) VALUES(?,?)",username1,hash_password)
 
         #log in user
-         rows=db.execute("SELECT id FROM users WHERE username=(?)",username1)
+         rows=db.execute("SELECT * FROM users WHERE username=(?)",username1)
          session["user_id"] = rows[0]["id"]
-
+         return redirect('/')
 
 
 
