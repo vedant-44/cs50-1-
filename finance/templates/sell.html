@@ -11,7 +11,7 @@
             <option disabled selected>Symbol</option>
                 {% for stock in stock_portfolio %}
                 <option value="{{stock["stocksymbol"]}}">{{stock["stocksymbol"]}}</option>
-
+                {% endfor %}
         </select>
     </div>
     <div class="mb-3">
