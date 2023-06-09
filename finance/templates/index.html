@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block title %}
+     Portfolio
+{% endblock %}
+
+{% block main %}
+<style>
+    .table {
+
+        /* OR */
+        max-width: 1300px; /* Set a maximum width, adjust as needed */
+    }
+</style>
+
+<div class="table-container">
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th class="text-start">Symbol</th>
+            <th class="text-end">Shares</th>
+            <th class="text-end">Price</th>
+            <th class="text-end">TOTAL</th>
+        </tr>
+    </thead>
+   <tbody>
+            {% for stock in stocks_portfolio %}
+            <tr>
+                <td class="text-start">{{stock["stocksymbol"]}}</td>
+
+                <td class="text-end">{{stock["shares"]}}</td>
+                <td class="text-end">{{symbols[stock["stocksymbol"]]|round(2)}}</td>
+                <td class="text-end">{{(stock["shares"]*symbols[stock["stocksymbol"]])|round(2)}}</td>
+            </tr>
+            {% endfor %}
+
+
+    </tbody>
+    <tfoot>
+        <tr>
+            <td class="border-0 fw-bold text-end" colspan="4">Cash</td>
+            <td class="border-0 text-end">{{cash[0]["cash"]}}</td>
+        </tr>
+        <tr>
+            <td class="border-0 fw-bold text-end" colspan="4">TOTAL</td>
+            <td class="border-0 w-bold text-end">{{total}}</td>
+        </tr>
+    </tfoot>
+</table>
+</div>
+{% endblock %}

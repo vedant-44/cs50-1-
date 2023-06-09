@@ -1,5 +1,6 @@
 import os
-
+import datetime
+import pytz
 from cs50 import SQL
 from flask import Flask, flash, redirect, render_template, request, session
 from flask_session import Session
@@ -36,14 +37,46 @@ def after_request(response):
 @login_required
 def index():
     """Show portfolio of stocks"""
-    return apology("TODO")
+    stocks_portfolio=db.execute("SELECT * FROM shares WHERE user_id=?",session["user_id"] )
+    symbols={}
+    total=0
+    cash=db.execute("SELECT cash FROM users WHERE id=?",session["user_id"])
+    for stock in stocks_portfolio:
+          current=lookup(stock["stocksymbol"])
+          symbols[stock["stocksymbol"]]=current["price"]
+          total=total+current["price"]*stock["shares"]
+    total=total+cash[0]["cash"]
+    total=round(total,2)
+    cash[0]["cash"]=round(cash[0]["cash"],2)
+    return render_template("index.html",stocks_portfolio=stocks_portfolio,symbols=symbols,cash=cash,total=total)
 
 
 @app.route("/buy", methods=["GET", "POST"])
 @login_required
 def buy():
     """Buy shares of stock"""
-    return apology("TODO")
+    if request.method=="POST":
+        symbol=request.form.get('symbol1')
+        shares=request.form.get('shares')
+        stock=lookup(symbol)
+        ist = pytz.timezone('Asia/Kolkata')
+        transaction_time = datetime.datetime.now(ist).strftime('%Y-%m-%d %H:%M:%S')
+        user=db.execute("SELECT * FROM users WHERE id=(?)",session["user_id"])
+        shareinfo=db.execute("SELECT * FROM shares WHERE user_id=(?) AND stocksymbol=(?)",session["user_id"],symbol )
+        if stock==None:
+            return apology("Incorrect Symbol")
+        if int(shares)<1:
+            return apology("Invalid shares")
+        if (stock["price"]*int(shares))>user[0]["cash"]:
+            return apology("Insufficient Cash")
+        db.execute("INSERT INTO transactions(stocksymbol,transaction_time,user_id,shares,price) VALUES(?,?,?,?,?)",symbol,transaction_time,session["user_id"],shares,stock["price"] )
+        if len(shareinfo)==0:
+            db.execute("INSERT INTO shares(stocksymbol,shares,user_id) VALUES(?,?,?)",symbol,int(shares),session["user_id"])
+        else:
+            db.execute("UPDATE shares SET shares=(?) WHERE user_id=(?) AND stocksymbol=(?)",shareinfo[0]["shares"]+int(shares),session["user_id"],symbol)
+        db.execute("UPDATE users SET cash=(?) WHERE id=(?)",user[0]["cash"]-stock["price"]*int(shares),session["user_id"])
+        return redirect('/')
+    return render_template('buy.html')
 
 
 @app.route("/history")
@@ -104,8 +137,14 @@ def logout():
 @login_required
 def quote():
     """Get stock quote."""
-    
+    if request.method=="POST":
+        symbol=request.form.get("symbol")
+        stock=lookup(symbol)
+        if stock==None:
+            return apology("Invalid Symbol")
 
+        return render_template('quote_info.html',stock=stock)
+    return render_template('quote.html')
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
