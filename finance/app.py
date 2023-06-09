@@ -183,5 +183,9 @@ def register():
 @login_required
 def sell():
     """Sell shares of stock"""
-    if request.method=="POST":
-        
+    if request.method=="GET":
+        stock_portfolio=db.execute("SELECT * FROM shares WHERE user_id=?",session["user_id"])
+        return render_template('sell.html',stock_portfolio=stock_portfolio)
+    #if method is post
+    
+
